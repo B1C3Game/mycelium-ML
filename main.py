@@ -121,6 +121,7 @@ class Grid:
 
 
 @dataclass
+
 class Agent:
     position: Position3D
     energy: float
@@ -129,6 +130,8 @@ class Agent:
     energy_efficiency: float = 1.0
     age: int = 0
     alive: bool = True
+    parent_id: Optional[int] = None
+    id: Optional[int] = None
 
     def _distance(self, a: Position3D, b: Position3D) -> float:
         ax, ay, az = a
@@ -192,6 +195,34 @@ class Agent:
         if resource_energy > 0:
             self.energy += float(resource_energy)
 
+    def replicate(self, rng: np.random.Generator, next_id: int, trait_bounds: dict, mutation_rate: float = 0.1) -> "Agent":
+        # Mutate traits with small Gaussian noise, clamp to bounds
+        sr_min, sr_max = trait_bounds["sensing_range"]
+        ee_min, ee_max = trait_bounds["energy_efficiency"]
+        new_sensing_range = np.clip(
+            self.sensing_range + rng.normal(0, mutation_rate), sr_min, sr_max
+        )
+        new_energy_efficiency = np.clip(
+            self.energy_efficiency + rng.normal(0, mutation_rate * 0.1), ee_min, ee_max
+        )
+        # Log mutation event if traits changed
+        mutated = (
+            abs(new_sensing_range - self.sensing_range) > 1e-6 or
+            abs(new_energy_efficiency - self.energy_efficiency) > 1e-6
+        )
+        child = Agent(
+            position=self.position,
+            energy=self.energy,
+            protocol=self.protocol,
+            sensing_range=int(round(new_sensing_range)),
+            energy_efficiency=float(new_energy_efficiency),
+            age=0,
+            alive=True,
+            parent_id=self.id,
+            id=next_id,
+        )
+        return child, mutated
+
     def step(self, grid: Grid) -> None:
         if not self.alive:
             return
@@ -215,8 +246,16 @@ class Simulation:
             resource_energy_max=config.resource_energy_max,
             seed=config.seed,
         )
+        self.next_agent_id = 0
         self.agents = self._init_agents()
         self.metrics: List[dict] = []
+        self.births: List[dict] = []
+        self.deaths: List[dict] = []
+        self.mutations: List[dict] = []
+        self.trait_bounds = {
+            "sensing_range": (1, 10),
+            "energy_efficiency": (0.5, 2.0),
+        }
 
     def _init_agents(self) -> List[Agent]:
         sx, sy, sz = self.config.grid_shape
@@ -225,18 +264,24 @@ class Simulation:
             x = int(self.rng.integers(0, sx))
             y = int(self.rng.integers(0, sy))
             z = int(self.rng.integers(0, sz))
-            agents.append(
-                Agent(
-                    position=(x, y, z),
-                    energy=self.config.initial_energy,
-                    protocol=f"p{idx % 3}",
-                    sensing_range=self.config.sensing_range,
-                    energy_efficiency=self.config.energy_efficiency,
-                )
+            agent = Agent(
+                position=(x, y, z),
+                energy=self.config.initial_energy,
+                protocol=f"p{idx % 3}",
+                sensing_range=self.config.sensing_range,
+                energy_efficiency=self.config.energy_efficiency,
+                id=self.next_agent_id,
             )
+            self.next_agent_id += 1
+            agents.append(agent)
         return agents
 
     def step(self, generation: int) -> None:
+        # Phase 2: Replication, mutation, lineage, logging
+        survivors = []
+        new_births = []
+        new_mutations = []
+        deaths = []
         for agent in self.agents:
             agent.grow(
                 self.grid,
@@ -245,15 +290,62 @@ class Simulation:
             agent.age += 1
             if agent.energy < 50.0 or agent.age > 1000:
                 agent.alive = False
+                deaths.append({
+                    "id": agent.id,
+                    "parent_id": agent.parent_id,
+                    "age": agent.age,
+                    "energy": agent.energy,
+                    "generation": generation,
+                })
+            else:
+                survivors.append(agent)
 
-        self.agents = [agent for agent in self.agents if agent.alive]
+        # Replication: Each survivor can produce a child with some probability (or if energy is high)
+        children = []
+        for agent in survivors:
+            if agent.energy > 150.0:  # Arbitrary threshold for reproduction
+                child, mutated = agent.replicate(
+                    self.rng, self.next_agent_id, self.trait_bounds, mutation_rate=0.5
+                )
+                self.next_agent_id += 1
+                children.append(child)
+                new_births.append({
+                    "id": child.id,
+                    "parent_id": agent.id,
+                    "generation": generation,
+                    "sensing_range": child.sensing_range,
+                    "energy_efficiency": child.energy_efficiency,
+                })
+                if mutated:
+                    new_mutations.append({
+                        "child_id": child.id,
+                        "parent_id": agent.id,
+                        "generation": generation,
+                        "old_sensing_range": agent.sensing_range,
+                        "new_sensing_range": child.sensing_range,
+                        "old_energy_efficiency": agent.energy_efficiency,
+                        "new_energy_efficiency": child.energy_efficiency,
+                    })
+                # Reproduction cost
+                agent.energy -= 40.0
+
+        self.agents = survivors + children
         spawned = self.grid.spawn_resources(self.config.resource_regen_ratio)
+        self.births.extend(new_births)
+        self.deaths.extend(deaths)
+        self.mutations.extend(new_mutations)
         self._log_metrics(generation=generation, spawned_resources=spawned)
 
     def _log_metrics(self, generation: int, spawned_resources: int) -> None:
         alive = len(self.agents)
         avg_energy = float(np.mean([agent.energy for agent in self.agents])) if alive else 0.0
         total_energy = float(np.sum([agent.energy for agent in self.agents])) if alive else 0.0
+        sensing_ranges = [agent.sensing_range for agent in self.agents]
+        energy_effs = [agent.energy_efficiency for agent in self.agents]
+        mean_sr = float(np.mean(sensing_ranges)) if sensing_ranges else 0.0
+        var_sr = float(np.var(sensing_ranges)) if sensing_ranges else 0.0
+        mean_ee = float(np.mean(energy_effs)) if energy_effs else 0.0
+        var_ee = float(np.var(energy_effs)) if energy_effs else 0.0
 
         self.metrics.append(
             {
@@ -263,6 +355,10 @@ class Simulation:
                 "total_energy": round(total_energy, 4),
                 "resource_cells": self.grid.resource_count(),
                 "spawned_resources": spawned_resources,
+                "mean_sensing_range": round(mean_sr, 4),
+                "var_sensing_range": round(var_sr, 4),
+                "mean_energy_efficiency": round(mean_ee, 4),
+                "var_energy_efficiency": round(var_ee, 4),
             }
         )
 
@@ -276,6 +372,12 @@ class Simulation:
     def save_metrics(self, output_path: Path) -> None:
         output_path.parent.mkdir(parents=True, exist_ok=True)
         output_path.write_text(json.dumps(self.metrics, indent=2), encoding="utf-8")
+
+    def save_logs(self, output_dir: Path) -> None:
+        output_dir.mkdir(parents=True, exist_ok=True)
+        (output_dir / "births.json").write_text(json.dumps(self.births, indent=2), encoding="utf-8")
+        (output_dir / "deaths.json").write_text(json.dumps(self.deaths, indent=2), encoding="utf-8")
+        (output_dir / "mutations.json").write_text(json.dumps(self.mutations, indent=2), encoding="utf-8")
 
     def save_checkpoint(self, output_path: Path) -> None:
         output_path.parent.mkdir(parents=True, exist_ok=True)
@@ -441,11 +543,12 @@ def run_main() -> None:
 
     simulation.save_metrics(metrics_path)
     simulation.save_checkpoint(checkpoint_path)
+    simulation.save_logs(output_dir)
 
     print(
         f"Run complete: generations={config.generations}, "
         f"alive_agents={len(simulation.agents)}, "
-        f"metrics={metrics_path}, checkpoint={checkpoint_path}"
+        f"metrics={metrics_path}, checkpoint={checkpoint_path}, logs={output_dir}"
     )
 
 
