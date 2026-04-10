@@ -1,0 +1,408 @@
+from __future__ import annotations
+
+import argparse
+import json
+from dataclasses import dataclass
+from pathlib import Path
+from typing import List, Optional, Tuple
+
+import numpy as np
+
+Position3D = Tuple[int, int, int]
+
+
+@dataclass
+class SimulationConfig:
+    grid_shape: Tuple[int, int, int] = (30, 30, 30)
+    resource_ratio: float = 0.10
+    resource_regen_ratio: float = 0.002
+    n_agents: int = 75
+    initial_energy: float = 120.0
+    sensing_range: int = 4
+    move_cost: float = 1.0
+    energy_gain: float = 25.0
+    generations: int = 500
+    seed: int = 42
+
+
+class Grid:
+    def __init__(
+        self,
+        shape: Tuple[int, int, int],
+        resource_ratio: float = 0.10,
+        seed: Optional[int] = None,
+    ) -> None:
+        if len(shape) != 3:
+            raise ValueError("shape must be a 3D tuple")
+        if not (0.0 <= resource_ratio <= 1.0):
+            raise ValueError("resource_ratio must be within [0.0, 1.0]")
+
+        self.shape = shape
+        self.resource_ratio = resource_ratio
+        self.rng = np.random.default_rng(seed)
+        self.cells = np.zeros(shape, dtype=np.uint8)
+        self._place_resources_exact_ratio()
+
+    def _place_resources_exact_ratio(self) -> None:
+        total_cells = int(np.prod(self.shape))
+        resource_cells = int(round(total_cells * self.resource_ratio))
+
+        if resource_cells == 0:
+            return
+
+        chosen_indices = self.rng.choice(total_cells, size=resource_cells, replace=False)
+        flat = self.cells.reshape(-1)
+        flat[chosen_indices] = 1
+
+    def in_bounds(self, pos: Position3D) -> bool:
+        x, y, z = pos
+        sx, sy, sz = self.shape
+        return 0 <= x < sx and 0 <= y < sy and 0 <= z < sz
+
+    def get_cell(self, pos: Position3D) -> int:
+        if not self.in_bounds(pos):
+            raise IndexError("position out of bounds")
+        x, y, z = pos
+        return int(self.cells[x, y, z])
+
+    def set_cell(self, pos: Position3D, value: int) -> None:
+        if not self.in_bounds(pos):
+            raise IndexError("position out of bounds")
+        x, y, z = pos
+        self.cells[x, y, z] = np.uint8(value)
+
+    def has_resource(self, pos: Position3D) -> bool:
+        return self.get_cell(pos) == 1
+
+    def consume_resource(self, pos: Position3D) -> bool:
+        if self.has_resource(pos):
+            self.set_cell(pos, 0)
+            return True
+        return False
+
+    def resource_count(self) -> int:
+        return int(self.cells.sum())
+
+    def spawn_resources(self, ratio: float) -> int:
+        if not (0.0 <= ratio <= 1.0):
+            raise ValueError("ratio must be within [0.0, 1.0]")
+
+        total_cells = int(np.prod(self.shape))
+        target_new = int(round(total_cells * ratio))
+        if target_new <= 0:
+            return 0
+
+        flat = self.cells.reshape(-1)
+        empty_indices = np.where(flat == 0)[0]
+        if empty_indices.size == 0:
+            return 0
+
+        spawn_n = min(target_new, int(empty_indices.size))
+        chosen_empty = self.rng.choice(empty_indices, size=spawn_n, replace=False)
+        flat[chosen_empty] = 1
+        return int(spawn_n)
+
+
+@dataclass
+class Agent:
+    position: Position3D
+    energy: float
+    protocol: str
+    sensing_range: int = 3
+    age: int = 0
+    alive: bool = True
+
+    def _distance(self, a: Position3D, b: Position3D) -> float:
+        ax, ay, az = a
+        bx, by, bz = b
+        return float(np.sqrt((ax - bx) ** 2 + (ay - by) ** 2 + (az - bz) ** 2))
+
+    def sense(self, grid: Grid) -> List[Tuple[float, Position3D]]:
+        x, y, z = self.position
+        r = self.sensing_range
+        sx, sy, sz = grid.shape
+
+        x0, x1 = max(0, x - r), min(sx - 1, x + r)
+        y0, y1 = max(0, y - r), min(sy - 1, y + r)
+        z0, z1 = max(0, z - r), min(sz - 1, z + r)
+
+        local = grid.cells[x0 : x1 + 1, y0 : y1 + 1, z0 : z1 + 1]
+        resource_offsets = np.argwhere(local == 1)
+
+        found: List[Tuple[float, Position3D]] = []
+        for ox, oy, oz in resource_offsets:
+            pos = (x0 + int(ox), y0 + int(oy), z0 + int(oz))
+            dist = self._distance(self.position, pos)
+            if dist <= float(r):
+                found.append((dist, pos))
+
+        found.sort(key=lambda item: item[0])
+        return found
+
+    def grow(
+        self,
+        grid: Grid,
+        sensed: Optional[List[Tuple[float, Position3D]]] = None,
+        move_cost: float = 1.0,
+        energy_gain: float = 25.0,
+    ) -> None:
+        if not self.alive:
+            return
+
+        targets = sensed if sensed is not None else self.sense(grid)
+        if not targets:
+            self.energy -= move_cost
+            return
+
+        _, target = targets[0]
+        cx, cy, cz = self.position
+        tx, ty, tz = target
+
+        # Move exactly one step per axis toward the nearest resource.
+        nx = cx + int(np.sign(tx - cx))
+        ny = cy + int(np.sign(ty - cy))
+        nz = cz + int(np.sign(tz - cz))
+
+        nx = max(0, min(grid.shape[0] - 1, nx))
+        ny = max(0, min(grid.shape[1] - 1, ny))
+        nz = max(0, min(grid.shape[2] - 1, nz))
+
+        self.position = (nx, ny, nz)
+        self.energy -= move_cost
+
+        if grid.consume_resource(self.position):
+            self.energy += energy_gain
+
+    def step(self, grid: Grid) -> None:
+        if not self.alive:
+            return
+
+        sensed = self.sense(grid)
+        self.grow(grid, sensed=sensed)
+        self.age += 1
+
+        if self.energy < 50.0 or self.age > 1000:
+            self.alive = False
+
+
+class Simulation:
+    def __init__(self, config: SimulationConfig) -> None:
+        self.config = config
+        self.rng = np.random.default_rng(config.seed)
+        self.grid = Grid(
+            shape=config.grid_shape,
+            resource_ratio=config.resource_ratio,
+            seed=config.seed,
+        )
+        self.agents = self._init_agents()
+        self.metrics: List[dict] = []
+
+    def _init_agents(self) -> List[Agent]:
+        sx, sy, sz = self.config.grid_shape
+        agents: List[Agent] = []
+        for idx in range(self.config.n_agents):
+            x = int(self.rng.integers(0, sx))
+            y = int(self.rng.integers(0, sy))
+            z = int(self.rng.integers(0, sz))
+            agents.append(
+                Agent(
+                    position=(x, y, z),
+                    energy=self.config.initial_energy,
+                    protocol=f"p{idx % 3}",
+                    sensing_range=self.config.sensing_range,
+                )
+            )
+        return agents
+
+    def step(self, generation: int) -> None:
+        for agent in self.agents:
+            agent.grow(
+                self.grid,
+                move_cost=self.config.move_cost,
+                energy_gain=self.config.energy_gain,
+            )
+            agent.age += 1
+            if agent.energy < 50.0 or agent.age > 1000:
+                agent.alive = False
+
+        self.agents = [agent for agent in self.agents if agent.alive]
+        spawned = self.grid.spawn_resources(self.config.resource_regen_ratio)
+        self._log_metrics(generation=generation, spawned_resources=spawned)
+
+    def _log_metrics(self, generation: int, spawned_resources: int) -> None:
+        alive = len(self.agents)
+        avg_energy = float(np.mean([agent.energy for agent in self.agents])) if alive else 0.0
+        total_energy = float(np.sum([agent.energy for agent in self.agents])) if alive else 0.0
+
+        self.metrics.append(
+            {
+                "generation": generation,
+                "alive_agents": alive,
+                "avg_energy": round(avg_energy, 4),
+                "total_energy": round(total_energy, 4),
+                "resource_cells": self.grid.resource_count(),
+                "spawned_resources": spawned_resources,
+            }
+        )
+
+    def run(self, generations: int) -> None:
+        for generation in range(1, generations + 1):
+            if not self.agents:
+                self._log_metrics(generation=generation, spawned_resources=0)
+                break
+            self.step(generation=generation)
+
+    def save_metrics(self, output_path: Path) -> None:
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        output_path.write_text(json.dumps(self.metrics, indent=2), encoding="utf-8")
+
+    def save_checkpoint(self, output_path: Path) -> None:
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+        checkpoint = {
+            "config": {
+                "grid_shape": list(self.config.grid_shape),
+                "resource_ratio": self.config.resource_ratio,
+                "resource_regen_ratio": self.config.resource_regen_ratio,
+                "n_agents": self.config.n_agents,
+                "initial_energy": self.config.initial_energy,
+                "sensing_range": self.config.sensing_range,
+                "move_cost": self.config.move_cost,
+                "energy_gain": self.config.energy_gain,
+                "generations": self.config.generations,
+                "seed": self.config.seed,
+            },
+            "final_state": {
+                "alive_agents": len(self.agents),
+                "resource_cells": self.grid.resource_count(),
+                "last_generation": self.metrics[-1]["generation"] if self.metrics else 0,
+                "agents": [
+                    {
+                        "position": list(agent.position),
+                        "energy": round(agent.energy, 4),
+                        "age": agent.age,
+                        "protocol": agent.protocol,
+                    }
+                    for agent in self.agents
+                ],
+            },
+        }
+        output_path.write_text(json.dumps(checkpoint, indent=2), encoding="utf-8")
+
+
+# ----------------------
+# Acceptance checks
+# ----------------------
+
+def _check_grid_spawns_with_10_percent_resources() -> None:
+    grid = Grid(shape=(10, 10, 10), resource_ratio=0.10, seed=7)
+    expected = int(round(10 * 10 * 10 * 0.10))
+    actual = grid.resource_count()
+    assert actual == expected, f"Expected {expected} resources, got {actual}"
+
+
+def _check_agent_senses_resources_correctly() -> None:
+    grid = Grid(shape=(5, 5, 5), resource_ratio=0.0, seed=1)
+    grid.set_cell((2, 2, 2), 1)
+    grid.set_cell((4, 4, 4), 1)
+
+    agent = Agent(position=(1, 1, 1), energy=100.0, protocol="phase1", sensing_range=3)
+    sensed = agent.sense(grid)
+    sensed_positions = [pos for _, pos in sensed]
+
+    assert (2, 2, 2) in sensed_positions, "Agent failed to sense near resource"
+    assert (4, 4, 4) not in sensed_positions, "Agent sensed resource outside sensing range"
+
+
+def _check_agent_moves_and_energy_decreases() -> None:
+    grid = Grid(shape=(5, 5, 5), resource_ratio=0.0, seed=1)
+    grid.set_cell((2, 2, 2), 1)
+
+    agent = Agent(position=(1, 1, 1), energy=100.0, protocol="phase1", sensing_range=3)
+    before_pos = agent.position
+    before_energy = agent.energy
+
+    agent.grow(grid, move_cost=2.0, energy_gain=0.0)
+
+    assert agent.position != before_pos, "Agent did not move"
+    assert agent.energy < before_energy, "Agent energy did not decrease"
+
+
+def run_phase1_acceptance_checks() -> None:
+    _check_grid_spawns_with_10_percent_resources()
+    _check_agent_senses_resources_correctly()
+    _check_agent_moves_and_energy_decreases()
+    print("Phase 1 acceptance checks passed")
+
+
+def _check_simulation_runs_500_without_crash_and_population_stays_alive() -> None:
+    cfg = SimulationConfig(generations=500, seed=7)
+    simulation = Simulation(cfg)
+    simulation.run(cfg.generations)
+
+    assert simulation.metrics, "Simulation produced no metrics"
+    assert simulation.metrics[-1]["generation"] == 500, "Simulation did not reach 500 generations"
+    assert len(simulation.agents) > 0, "Population collapsed before generation 500"
+
+
+def _check_metrics_log_is_written_json() -> None:
+    cfg = SimulationConfig(generations=50, seed=11)
+    simulation = Simulation(cfg)
+    simulation.run(cfg.generations)
+
+    out_path = Path("outputs") / "test_metrics.json"
+    simulation.save_metrics(out_path)
+
+    raw = out_path.read_text(encoding="utf-8")
+    parsed = json.loads(raw)
+    assert isinstance(parsed, list), "Metrics file is not a JSON list"
+    assert parsed, "Metrics log is empty"
+
+
+def run_full_acceptance_checks() -> None:
+    run_phase1_acceptance_checks()
+    _check_simulation_runs_500_without_crash_and_population_stays_alive()
+    _check_metrics_log_is_written_json()
+    print("Full acceptance checks passed")
+
+
+def run_main() -> None:
+    parser = argparse.ArgumentParser(description="mycelium-ML Day 1 mechanics run")
+    parser.add_argument("--generations", type=int, default=500)
+    parser.add_argument("--seed", type=int, default=42)
+    parser.add_argument("--resource-ratio", type=float, default=0.10)
+    parser.add_argument("--resource-regen-ratio", type=float, default=0.002)
+    parser.add_argument("--n-agents", type=int, default=75)
+    parser.add_argument("--output-dir", type=str, default="outputs")
+    parser.add_argument("--acceptance-only", action="store_true")
+    args = parser.parse_args()
+
+    if args.acceptance_only:
+        run_full_acceptance_checks()
+        return
+
+    config = SimulationConfig(
+        generations=args.generations,
+        seed=args.seed,
+        resource_ratio=args.resource_ratio,
+        resource_regen_ratio=args.resource_regen_ratio,
+        n_agents=args.n_agents,
+    )
+    simulation = Simulation(config)
+    simulation.run(config.generations)
+
+    output_dir = Path(args.output_dir)
+    metrics_path = output_dir / "metrics.json"
+    checkpoint_path = output_dir / "checkpoint.json"
+
+    simulation.save_metrics(metrics_path)
+    simulation.save_checkpoint(checkpoint_path)
+
+    print(
+        f"Run complete: generations={config.generations}, "
+        f"alive_agents={len(simulation.agents)}, "
+        f"metrics={metrics_path}, checkpoint={checkpoint_path}"
+    )
+
+
+if __name__ == "__main__":
+    run_main()
