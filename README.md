@@ -40,6 +40,7 @@ Not included (by design for this phase):
 - requirements.txt: Python dependencies
 - RUNBOOK-tonight-local-to-server.md: local -> server operating protocol
 - PROJECT.md: project execution context
+- PHASE_FINDINGS.md: current findings and conclusions from completed phases
 
 ## Quick Start (Local Workstation)
 

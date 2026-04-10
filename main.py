@@ -14,13 +14,15 @@ Position3D = Tuple[int, int, int]
 @dataclass
 class SimulationConfig:
     grid_shape: Tuple[int, int, int] = (30, 30, 30)
-    resource_ratio: float = 0.10
-    resource_regen_ratio: float = 0.002
+    resource_ratio: float = 0.08
+    resource_regen_ratio: float = 0.001
+    resource_energy_min: int = 1
+    resource_energy_max: int = 6
     n_agents: int = 75
     initial_energy: float = 120.0
     sensing_range: int = 4
-    move_cost: float = 1.0
-    energy_gain: float = 25.0
+    move_cost: float = 1.5
+    energy_efficiency: float = 1.25
     generations: int = 500
     seed: int = 42
 
@@ -30,18 +32,32 @@ class Grid:
         self,
         shape: Tuple[int, int, int],
         resource_ratio: float = 0.10,
+        resource_energy_min: int = 1,
+        resource_energy_max: int = 6,
         seed: Optional[int] = None,
     ) -> None:
         if len(shape) != 3:
             raise ValueError("shape must be a 3D tuple")
         if not (0.0 <= resource_ratio <= 1.0):
             raise ValueError("resource_ratio must be within [0.0, 1.0]")
+        if resource_energy_min < 1 or resource_energy_max < resource_energy_min:
+            raise ValueError("resource energy bounds are invalid")
 
         self.shape = shape
         self.resource_ratio = resource_ratio
+        self.resource_energy_min = resource_energy_min
+        self.resource_energy_max = resource_energy_max
         self.rng = np.random.default_rng(seed)
         self.cells = np.zeros(shape, dtype=np.uint8)
         self._place_resources_exact_ratio()
+
+    def _sample_resource_values(self, n: int) -> np.ndarray:
+        return self.rng.integers(
+            self.resource_energy_min,
+            self.resource_energy_max + 1,
+            size=n,
+            dtype=np.uint8,
+        )
 
     def _place_resources_exact_ratio(self) -> None:
         total_cells = int(np.prod(self.shape))
@@ -52,7 +68,7 @@ class Grid:
 
         chosen_indices = self.rng.choice(total_cells, size=resource_cells, replace=False)
         flat = self.cells.reshape(-1)
-        flat[chosen_indices] = 1
+        flat[chosen_indices] = self._sample_resource_values(resource_cells)
 
     def in_bounds(self, pos: Position3D) -> bool:
         x, y, z = pos
@@ -72,16 +88,17 @@ class Grid:
         self.cells[x, y, z] = np.uint8(value)
 
     def has_resource(self, pos: Position3D) -> bool:
-        return self.get_cell(pos) == 1
+        return self.get_cell(pos) > 0
 
-    def consume_resource(self, pos: Position3D) -> bool:
+    def consume_resource(self, pos: Position3D) -> int:
         if self.has_resource(pos):
+            energy = self.get_cell(pos)
             self.set_cell(pos, 0)
-            return True
-        return False
+            return energy
+        return 0
 
     def resource_count(self) -> int:
-        return int(self.cells.sum())
+        return int(np.count_nonzero(self.cells))
 
     def spawn_resources(self, ratio: float) -> int:
         if not (0.0 <= ratio <= 1.0):
@@ -99,7 +116,7 @@ class Grid:
 
         spawn_n = min(target_new, int(empty_indices.size))
         chosen_empty = self.rng.choice(empty_indices, size=spawn_n, replace=False)
-        flat[chosen_empty] = 1
+        flat[chosen_empty] = self._sample_resource_values(spawn_n)
         return int(spawn_n)
 
 
@@ -109,6 +126,7 @@ class Agent:
     energy: float
     protocol: str
     sensing_range: int = 3
+    energy_efficiency: float = 1.0
     age: int = 0
     alive: bool = True
 
@@ -127,7 +145,7 @@ class Agent:
         z0, z1 = max(0, z - r), min(sz - 1, z + r)
 
         local = grid.cells[x0 : x1 + 1, y0 : y1 + 1, z0 : z1 + 1]
-        resource_offsets = np.argwhere(local == 1)
+        resource_offsets = np.argwhere(local > 0)
 
         found: List[Tuple[float, Position3D]] = []
         for ox, oy, oz in resource_offsets:
@@ -144,14 +162,14 @@ class Agent:
         grid: Grid,
         sensed: Optional[List[Tuple[float, Position3D]]] = None,
         move_cost: float = 1.0,
-        energy_gain: float = 25.0,
     ) -> None:
         if not self.alive:
             return
 
+        move_energy_cost = move_cost * self.energy_efficiency
         targets = sensed if sensed is not None else self.sense(grid)
         if not targets:
-            self.energy -= move_cost
+            self.energy -= move_energy_cost
             return
 
         _, target = targets[0]
@@ -168,10 +186,11 @@ class Agent:
         nz = max(0, min(grid.shape[2] - 1, nz))
 
         self.position = (nx, ny, nz)
-        self.energy -= move_cost
+        self.energy -= move_energy_cost
 
-        if grid.consume_resource(self.position):
-            self.energy += energy_gain
+        resource_energy = grid.consume_resource(self.position)
+        if resource_energy > 0:
+            self.energy += float(resource_energy)
 
     def step(self, grid: Grid) -> None:
         if not self.alive:
@@ -192,6 +211,8 @@ class Simulation:
         self.grid = Grid(
             shape=config.grid_shape,
             resource_ratio=config.resource_ratio,
+            resource_energy_min=config.resource_energy_min,
+            resource_energy_max=config.resource_energy_max,
             seed=config.seed,
         )
         self.agents = self._init_agents()
@@ -210,6 +231,7 @@ class Simulation:
                     energy=self.config.initial_energy,
                     protocol=f"p{idx % 3}",
                     sensing_range=self.config.sensing_range,
+                    energy_efficiency=self.config.energy_efficiency,
                 )
             )
         return agents
@@ -219,7 +241,6 @@ class Simulation:
             agent.grow(
                 self.grid,
                 move_cost=self.config.move_cost,
-                energy_gain=self.config.energy_gain,
             )
             agent.age += 1
             if agent.energy < 50.0 or agent.age > 1000:
@@ -263,11 +284,13 @@ class Simulation:
                 "grid_shape": list(self.config.grid_shape),
                 "resource_ratio": self.config.resource_ratio,
                 "resource_regen_ratio": self.config.resource_regen_ratio,
+                "resource_energy_min": self.config.resource_energy_min,
+                "resource_energy_max": self.config.resource_energy_max,
                 "n_agents": self.config.n_agents,
                 "initial_energy": self.config.initial_energy,
                 "sensing_range": self.config.sensing_range,
                 "move_cost": self.config.move_cost,
-                "energy_gain": self.config.energy_gain,
+                "energy_efficiency": self.config.energy_efficiency,
                 "generations": self.config.generations,
                 "seed": self.config.seed,
             },
@@ -302,8 +325,8 @@ def _check_grid_spawns_with_10_percent_resources() -> None:
 
 def _check_agent_senses_resources_correctly() -> None:
     grid = Grid(shape=(5, 5, 5), resource_ratio=0.0, seed=1)
-    grid.set_cell((2, 2, 2), 1)
-    grid.set_cell((4, 4, 4), 1)
+    grid.set_cell((2, 2, 2), 4)
+    grid.set_cell((4, 4, 4), 2)
 
     agent = Agent(position=(1, 1, 1), energy=100.0, protocol="phase1", sensing_range=3)
     sensed = agent.sense(grid)
@@ -321,16 +344,30 @@ def _check_agent_moves_and_energy_decreases() -> None:
     before_pos = agent.position
     before_energy = agent.energy
 
-    agent.grow(grid, move_cost=2.0, energy_gain=0.0)
+    agent.grow(grid, move_cost=2.0)
 
     assert agent.position != before_pos, "Agent did not move"
     assert agent.energy < before_energy, "Agent energy did not decrease"
+
+
+def _check_resource_disappears_after_pickup() -> None:
+    grid = Grid(shape=(5, 5, 5), resource_ratio=0.0, seed=1)
+    grid.set_cell((2, 2, 2), 6)
+    agent = Agent(position=(1, 1, 1), energy=100.0, protocol="phase1", sensing_range=3)
+
+    before = grid.get_cell((2, 2, 2))
+    agent.grow(grid, move_cost=1.0)
+    after = grid.get_cell((2, 2, 2))
+
+    assert before > 0, "Resource was not initialized"
+    assert after == 0, "Resource was not consumed from the grid"
 
 
 def run_phase1_acceptance_checks() -> None:
     _check_grid_spawns_with_10_percent_resources()
     _check_agent_senses_resources_correctly()
     _check_agent_moves_and_energy_decreases()
+    _check_resource_disappears_after_pickup()
     print("Phase 1 acceptance checks passed")
 
 
@@ -371,7 +408,11 @@ def run_main() -> None:
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--resource-ratio", type=float, default=0.10)
     parser.add_argument("--resource-regen-ratio", type=float, default=0.002)
+    parser.add_argument("--resource-energy-min", type=int, default=1)
+    parser.add_argument("--resource-energy-max", type=int, default=6)
     parser.add_argument("--n-agents", type=int, default=75)
+    parser.add_argument("--move-cost", type=float, default=1.5)
+    parser.add_argument("--energy-efficiency", type=float, default=1.25)
     parser.add_argument("--output-dir", type=str, default="outputs")
     parser.add_argument("--acceptance-only", action="store_true")
     args = parser.parse_args()
@@ -385,7 +426,11 @@ def run_main() -> None:
         seed=args.seed,
         resource_ratio=args.resource_ratio,
         resource_regen_ratio=args.resource_regen_ratio,
+        resource_energy_min=args.resource_energy_min,
+        resource_energy_max=args.resource_energy_max,
         n_agents=args.n_agents,
+        move_cost=args.move_cost,
+        energy_efficiency=args.energy_efficiency,
     )
     simulation = Simulation(config)
     simulation.run(config.generations)
