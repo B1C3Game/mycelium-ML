@@ -1,0 +1,777 @@
+{
+  "config": {
+    "grid_shape": [
+      30,
+      30,
+      30
+    ],
+    "resource_ratio": 0.1,
+    "resource_regen_ratio": 0.002,
+    "resource_energy_min": 1,
+    "resource_energy_max": 6,
+    "n_agents": 75,
+    "initial_energy": 120.0,
+    "sensing_range": 4,
+    "move_cost": 1.5,
+    "energy_efficiency": 1.25,
+    "generations": 15,
+    "seed": 42
+  },
+  "final_state": {
+    "alive_agents": 75,
+    "resource_cells": 2540,
+    "last_generation": 15,
+    "agents": [
+      {
+        "position": [
+          2,
+          25,
+          16
+        ],
+        "energy": 120.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          10,
+          15,
+          27
+        ],
+        "energy": 140.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          0,
+          26,
+          5
+        ],
+        "energy": 137.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          4,
+          12,
+          27
+        ],
+        "energy": 138.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          20,
+          22,
+          29
+        ],
+        "energy": 141.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          17,
+          8,
+          4
+        ],
+        "energy": 132.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          23,
+          9,
+          7
+        ],
+        "energy": 122.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          3,
+          2,
+          27
+        ],
+        "energy": 140.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          24,
+          21,
+          5
+        ],
+        "energy": 142.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          28,
+          14,
+          12
+        ],
+        "energy": 131.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          15,
+          7,
+          0
+        ],
+        "energy": 132.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          9,
+          28,
+          1
+        ],
+        "energy": 132.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          19,
+          25,
+          8
+        ],
+        "energy": 142.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          11,
+          3,
+          15
+        ],
+        "energy": 152.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          17,
+          5,
+          4
+        ],
+        "energy": 128.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          21,
+          17,
+          28
+        ],
+        "energy": 124.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          23,
+          24,
+          22
+        ],
+        "energy": 148.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          10,
+          9,
+          14
+        ],
+        "energy": 125.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          12,
+          0,
+          16
+        ],
+        "energy": 141.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          6,
+          25,
+          18
+        ],
+        "energy": 134.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          25,
+          25,
+          10
+        ],
+        "energy": 139.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          26,
+          8,
+          18
+        ],
+        "energy": 142.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          26,
+          14,
+          3
+        ],
+        "energy": 143.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          14,
+          24,
+          0
+        ],
+        "energy": 131.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          15,
+          4,
+          24
+        ],
+        "energy": 121.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          11,
+          11,
+          8
+        ],
+        "energy": 139.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          15,
+          22,
+          25
+        ],
+        "energy": 126.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          13,
+          2,
+          27
+        ],
+        "energy": 135.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          23,
+          14,
+          0
+        ],
+        "energy": 133.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          2,
+          27,
+          23
+        ],
+        "energy": 152.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          14,
+          26,
+          22
+        ],
+        "energy": 146.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          8,
+          26,
+          6
+        ],
+        "energy": 140.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          1,
+          19,
+          10
+        ],
+        "energy": 125.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          1,
+          27,
+          11
+        ],
+        "energy": 132.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          14,
+          2,
+          28
+        ],
+        "energy": 132.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          16,
+          26,
+          17
+        ],
+        "energy": 144.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          17,
+          22,
+          15
+        ],
+        "energy": 140.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          25,
+          22,
+          17
+        ],
+        "energy": 136.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          16,
+          10,
+          1
+        ],
+        "energy": 130.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          2,
+          3,
+          8
+        ],
+        "energy": 144.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          16,
+          23,
+          18
+        ],
+        "energy": 134.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          7,
+          23,
+          20
+        ],
+        "energy": 133.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          2,
+          15,
+          20
+        ],
+        "energy": 132.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          23,
+          17,
+          20
+        ],
+        "energy": 138.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          5,
+          17,
+          19
+        ],
+        "energy": 126.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          4,
+          9,
+          6
+        ],
+        "energy": 129.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          12,
+          17,
+          26
+        ],
+        "energy": 134.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          8,
+          6,
+          16
+        ],
+        "energy": 133.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          22,
+          24,
+          2
+        ],
+        "energy": 148.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          7,
+          27,
+          2
+        ],
+        "energy": 145.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          24,
+          9,
+          28
+        ],
+        "energy": 118.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          8,
+          14,
+          27
+        ],
+        "energy": 137.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          4,
+          15,
+          15
+        ],
+        "energy": 138.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          28,
+          24,
+          12
+        ],
+        "energy": 128.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          8,
+          6,
+          14
+        ],
+        "energy": 129.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          24,
+          11,
+          4
+        ],
+        "energy": 131.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          3,
+          5,
+          0
+        ],
+        "energy": 120.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          0,
+          26,
+          29
+        ],
+        "energy": 129.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          17,
+          10,
+          21
+        ],
+        "energy": 139.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          0,
+          20,
+          9
+        ],
+        "energy": 149.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          23,
+          2,
+          10
+        ],
+        "energy": 145.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          18,
+          14,
+          14
+        ],
+        "energy": 142.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          7,
+          6,
+          11
+        ],
+        "energy": 130.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          4,
+          29,
+          22
+        ],
+        "energy": 136.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          16,
+          11,
+          26
+        ],
+        "energy": 128.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          4,
+          15,
+          3
+        ],
+        "energy": 129.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          6,
+          26,
+          14
+        ],
+        "energy": 134.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          22,
+          14,
+          22
+        ],
+        "energy": 132.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          7,
+          9,
+          22
+        ],
+        "energy": 146.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          24,
+          4,
+          24
+        ],
+        "energy": 129.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          6,
+          18,
+          22
+        ],
+        "energy": 144.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          16,
+          26,
+          11
+        ],
+        "energy": 134.875,
+        "age": 15,
+        "protocol": "p2"
+      },
+      {
+        "position": [
+          1,
+          0,
+          18
+        ],
+        "energy": 130.875,
+        "age": 15,
+        "protocol": "p0"
+      },
+      {
+        "position": [
+          20,
+          2,
+          9
+        ],
+        "energy": 133.875,
+        "age": 15,
+        "protocol": "p1"
+      },
+      {
+        "position": [
+          18,
+          12,
+          17
+        ],
+        "energy": 146.875,
+        "age": 15,
+        "protocol": "p2"
+      }
+    ]
+  }
+}

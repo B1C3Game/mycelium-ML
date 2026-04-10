@@ -1,0 +1,4002 @@
+[
+  {
+    "generation": 1,
+    "alive_agents": 75,
+    "avg_energy": 121.0317,
+    "total_energy": 9077.375,
+    "resource_cells": 3224,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 2,
+    "alive_agents": 75,
+    "avg_energy": 122.5833,
+    "total_energy": 9193.75,
+    "resource_cells": 3211,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 3,
+    "alive_agents": 75,
+    "avg_energy": 123.655,
+    "total_energy": 9274.125,
+    "resource_cells": 3201,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 4,
+    "alive_agents": 75,
+    "avg_energy": 125.18,
+    "total_energy": 9388.5,
+    "resource_cells": 3186,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 5,
+    "alive_agents": 75,
+    "avg_energy": 126.3317,
+    "total_energy": 9474.875,
+    "resource_cells": 3176,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 6,
+    "alive_agents": 75,
+    "avg_energy": 128.0967,
+    "total_energy": 9607.25,
+    "resource_cells": 3160,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 7,
+    "alive_agents": 75,
+    "avg_energy": 129.2617,
+    "total_energy": 9694.625,
+    "resource_cells": 3151,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 8,
+    "alive_agents": 75,
+    "avg_energy": 130.4667,
+    "total_energy": 9785.0,
+    "resource_cells": 3138,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 9,
+    "alive_agents": 75,
+    "avg_energy": 131.6983,
+    "total_energy": 9877.375,
+    "resource_cells": 3126,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 10,
+    "alive_agents": 75,
+    "avg_energy": 133.3033,
+    "total_energy": 9997.75,
+    "resource_cells": 3108,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 11,
+    "alive_agents": 75,
+    "avg_energy": 134.6017,
+    "total_energy": 10095.125,
+    "resource_cells": 3096,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 12,
+    "alive_agents": 75,
+    "avg_energy": 135.9933,
+    "total_energy": 10199.5,
+    "resource_cells": 3080,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 13,
+    "alive_agents": 75,
+    "avg_energy": 137.4917,
+    "total_energy": 10311.875,
+    "resource_cells": 3065,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 14,
+    "alive_agents": 75,
+    "avg_energy": 138.4433,
+    "total_energy": 10383.25,
+    "resource_cells": 3053,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 15,
+    "alive_agents": 75,
+    "avg_energy": 139.5417,
+    "total_energy": 10465.625,
+    "resource_cells": 3040,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 16,
+    "alive_agents": 75,
+    "avg_energy": 140.9467,
+    "total_energy": 10571.0,
+    "resource_cells": 3025,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 17,
+    "alive_agents": 75,
+    "avg_energy": 142.045,
+    "total_energy": 10653.375,
+    "resource_cells": 3015,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 18,
+    "alive_agents": 75,
+    "avg_energy": 143.1833,
+    "total_energy": 10738.75,
+    "resource_cells": 3001,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 19,
+    "alive_agents": 75,
+    "avg_energy": 144.6283,
+    "total_energy": 10847.125,
+    "resource_cells": 2987,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 20,
+    "alive_agents": 75,
+    "avg_energy": 145.9267,
+    "total_energy": 10944.5,
+    "resource_cells": 2973,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 21,
+    "alive_agents": 75,
+    "avg_energy": 147.0917,
+    "total_energy": 11031.875,
+    "resource_cells": 2961,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 22,
+    "alive_agents": 75,
+    "avg_energy": 148.4967,
+    "total_energy": 11137.25,
+    "resource_cells": 2952,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 23,
+    "alive_agents": 75,
+    "avg_energy": 149.395,
+    "total_energy": 11204.625,
+    "resource_cells": 2942,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 24,
+    "alive_agents": 75,
+    "avg_energy": 150.5867,
+    "total_energy": 11294.0,
+    "resource_cells": 2929,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 25,
+    "alive_agents": 75,
+    "avg_energy": 151.4983,
+    "total_energy": 11362.375,
+    "resource_cells": 2918,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 26,
+    "alive_agents": 75,
+    "avg_energy": 152.53,
+    "total_energy": 11439.75,
+    "resource_cells": 2908,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 27,
+    "alive_agents": 75,
+    "avg_energy": 153.3083,
+    "total_energy": 11498.125,
+    "resource_cells": 2903,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 28,
+    "alive_agents": 75,
+    "avg_energy": 154.5667,
+    "total_energy": 11592.5,
+    "resource_cells": 2892,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 29,
+    "alive_agents": 75,
+    "avg_energy": 155.745,
+    "total_energy": 11680.875,
+    "resource_cells": 2883,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 30,
+    "alive_agents": 75,
+    "avg_energy": 156.83,
+    "total_energy": 11762.25,
+    "resource_cells": 2876,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 31,
+    "alive_agents": 75,
+    "avg_energy": 157.9283,
+    "total_energy": 11844.625,
+    "resource_cells": 2865,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 32,
+    "alive_agents": 75,
+    "avg_energy": 159.52,
+    "total_energy": 11964.0,
+    "resource_cells": 2850,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 33,
+    "alive_agents": 75,
+    "avg_energy": 160.5117,
+    "total_energy": 12038.375,
+    "resource_cells": 2850,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 34,
+    "alive_agents": 75,
+    "avg_energy": 162.05,
+    "total_energy": 12153.75,
+    "resource_cells": 2840,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 35,
+    "alive_agents": 75,
+    "avg_energy": 163.4683,
+    "total_energy": 12260.125,
+    "resource_cells": 2826,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 36,
+    "alive_agents": 75,
+    "avg_energy": 164.5,
+    "total_energy": 12337.5,
+    "resource_cells": 2817,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 37,
+    "alive_agents": 75,
+    "avg_energy": 165.585,
+    "total_energy": 12418.875,
+    "resource_cells": 2804,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 38,
+    "alive_agents": 75,
+    "avg_energy": 166.63,
+    "total_energy": 12497.25,
+    "resource_cells": 2795,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 39,
+    "alive_agents": 75,
+    "avg_energy": 167.435,
+    "total_energy": 12557.625,
+    "resource_cells": 2791,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 40,
+    "alive_agents": 75,
+    "avg_energy": 168.9067,
+    "total_energy": 12668.0,
+    "resource_cells": 2778,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 41,
+    "alive_agents": 75,
+    "avg_energy": 170.1783,
+    "total_energy": 12763.375,
+    "resource_cells": 2769,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 42,
+    "alive_agents": 75,
+    "avg_energy": 170.9433,
+    "total_energy": 12820.75,
+    "resource_cells": 2760,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 43,
+    "alive_agents": 75,
+    "avg_energy": 171.8017,
+    "total_energy": 12885.125,
+    "resource_cells": 2753,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 44,
+    "alive_agents": 75,
+    "avg_energy": 172.42,
+    "total_energy": 12931.5,
+    "resource_cells": 2750,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 45,
+    "alive_agents": 75,
+    "avg_energy": 173.1717,
+    "total_energy": 12987.875,
+    "resource_cells": 2746,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 46,
+    "alive_agents": 75,
+    "avg_energy": 174.3633,
+    "total_energy": 13077.25,
+    "resource_cells": 2736,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 47,
+    "alive_agents": 75,
+    "avg_energy": 175.6217,
+    "total_energy": 13171.625,
+    "resource_cells": 2727,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 48,
+    "alive_agents": 75,
+    "avg_energy": 176.3867,
+    "total_energy": 13229.0,
+    "resource_cells": 2721,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 49,
+    "alive_agents": 75,
+    "avg_energy": 177.525,
+    "total_energy": 13314.375,
+    "resource_cells": 2712,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 50,
+    "alive_agents": 75,
+    "avg_energy": 178.5033,
+    "total_energy": 13387.75,
+    "resource_cells": 2708,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 51,
+    "alive_agents": 75,
+    "avg_energy": 179.135,
+    "total_energy": 13435.125,
+    "resource_cells": 2705,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 52,
+    "alive_agents": 75,
+    "avg_energy": 180.7,
+    "total_energy": 13552.5,
+    "resource_cells": 2699,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 53,
+    "alive_agents": 75,
+    "avg_energy": 181.6917,
+    "total_energy": 13626.875,
+    "resource_cells": 2695,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 54,
+    "alive_agents": 75,
+    "avg_energy": 182.19,
+    "total_energy": 13664.25,
+    "resource_cells": 2693,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 55,
+    "alive_agents": 75,
+    "avg_energy": 182.7817,
+    "total_energy": 13708.625,
+    "resource_cells": 2694,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 56,
+    "alive_agents": 75,
+    "avg_energy": 183.1733,
+    "total_energy": 13738.0,
+    "resource_cells": 2699,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 57,
+    "alive_agents": 75,
+    "avg_energy": 183.9917,
+    "total_energy": 13799.375,
+    "resource_cells": 2695,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 58,
+    "alive_agents": 75,
+    "avg_energy": 184.21,
+    "total_energy": 13815.75,
+    "resource_cells": 2701,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 59,
+    "alive_agents": 75,
+    "avg_energy": 184.655,
+    "total_energy": 13849.125,
+    "resource_cells": 2700,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 60,
+    "alive_agents": 75,
+    "avg_energy": 185.3533,
+    "total_energy": 13901.5,
+    "resource_cells": 2697,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 61,
+    "alive_agents": 75,
+    "avg_energy": 186.1583,
+    "total_energy": 13961.875,
+    "resource_cells": 2699,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 62,
+    "alive_agents": 75,
+    "avg_energy": 187.07,
+    "total_energy": 14030.25,
+    "resource_cells": 2694,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 63,
+    "alive_agents": 75,
+    "avg_energy": 187.995,
+    "total_energy": 14099.625,
+    "resource_cells": 2693,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 64,
+    "alive_agents": 75,
+    "avg_energy": 188.6133,
+    "total_energy": 14146.0,
+    "resource_cells": 2691,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 65,
+    "alive_agents": 75,
+    "avg_energy": 189.285,
+    "total_energy": 14196.375,
+    "resource_cells": 2689,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 66,
+    "alive_agents": 75,
+    "avg_energy": 190.1433,
+    "total_energy": 14260.75,
+    "resource_cells": 2683,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 67,
+    "alive_agents": 75,
+    "avg_energy": 191.015,
+    "total_energy": 14326.125,
+    "resource_cells": 2677,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 68,
+    "alive_agents": 75,
+    "avg_energy": 191.8867,
+    "total_energy": 14391.5,
+    "resource_cells": 2671,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 69,
+    "alive_agents": 75,
+    "avg_energy": 192.5583,
+    "total_energy": 14441.875,
+    "resource_cells": 2669,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 70,
+    "alive_agents": 75,
+    "avg_energy": 193.0567,
+    "total_energy": 14479.25,
+    "resource_cells": 2670,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 71,
+    "alive_agents": 75,
+    "avg_energy": 193.915,
+    "total_energy": 14543.625,
+    "resource_cells": 2672,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 72,
+    "alive_agents": 75,
+    "avg_energy": 194.4133,
+    "total_energy": 14581.0,
+    "resource_cells": 2671,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 73,
+    "alive_agents": 75,
+    "avg_energy": 195.2317,
+    "total_energy": 14642.375,
+    "resource_cells": 2671,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 74,
+    "alive_agents": 75,
+    "avg_energy": 195.4367,
+    "total_energy": 14657.75,
+    "resource_cells": 2674,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 75,
+    "alive_agents": 75,
+    "avg_energy": 196.5483,
+    "total_energy": 14741.125,
+    "resource_cells": 2668,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 76,
+    "alive_agents": 75,
+    "avg_energy": 197.0467,
+    "total_energy": 14778.5,
+    "resource_cells": 2666,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 77,
+    "alive_agents": 75,
+    "avg_energy": 198.2117,
+    "total_energy": 14865.875,
+    "resource_cells": 2662,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 78,
+    "alive_agents": 75,
+    "avg_energy": 199.07,
+    "total_energy": 14930.25,
+    "resource_cells": 2663,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 79,
+    "alive_agents": 75,
+    "avg_energy": 199.795,
+    "total_energy": 14984.625,
+    "resource_cells": 2663,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 80,
+    "alive_agents": 75,
+    "avg_energy": 200.6133,
+    "total_energy": 15046.0,
+    "resource_cells": 2662,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 81,
+    "alive_agents": 75,
+    "avg_energy": 201.2183,
+    "total_energy": 15091.375,
+    "resource_cells": 2662,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 82,
+    "alive_agents": 75,
+    "avg_energy": 201.61,
+    "total_energy": 15120.75,
+    "resource_cells": 2667,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 83,
+    "alive_agents": 75,
+    "avg_energy": 202.3483,
+    "total_energy": 15176.125,
+    "resource_cells": 2665,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 84,
+    "alive_agents": 75,
+    "avg_energy": 203.1133,
+    "total_energy": 15233.5,
+    "resource_cells": 2662,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 85,
+    "alive_agents": 75,
+    "avg_energy": 203.905,
+    "total_energy": 15292.875,
+    "resource_cells": 2663,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 86,
+    "alive_agents": 75,
+    "avg_energy": 204.6567,
+    "total_energy": 15349.25,
+    "resource_cells": 2663,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 87,
+    "alive_agents": 75,
+    "avg_energy": 205.0083,
+    "total_energy": 15375.625,
+    "resource_cells": 2668,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 88,
+    "alive_agents": 75,
+    "avg_energy": 205.32,
+    "total_energy": 15399.0,
+    "resource_cells": 2669,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 89,
+    "alive_agents": 75,
+    "avg_energy": 206.2183,
+    "total_energy": 15466.375,
+    "resource_cells": 2666,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 90,
+    "alive_agents": 75,
+    "avg_energy": 207.05,
+    "total_energy": 15528.75,
+    "resource_cells": 2666,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 91,
+    "alive_agents": 75,
+    "avg_energy": 207.3617,
+    "total_energy": 15552.125,
+    "resource_cells": 2672,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 92,
+    "alive_agents": 75,
+    "avg_energy": 208.26,
+    "total_energy": 15619.5,
+    "resource_cells": 2671,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 93,
+    "alive_agents": 75,
+    "avg_energy": 209.345,
+    "total_energy": 15700.875,
+    "resource_cells": 2669,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 94,
+    "alive_agents": 75,
+    "avg_energy": 209.8033,
+    "total_energy": 15735.25,
+    "resource_cells": 2669,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 95,
+    "alive_agents": 75,
+    "avg_energy": 210.3817,
+    "total_energy": 15778.625,
+    "resource_cells": 2664,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 96,
+    "alive_agents": 75,
+    "avg_energy": 211.3067,
+    "total_energy": 15848.0,
+    "resource_cells": 2657,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 97,
+    "alive_agents": 75,
+    "avg_energy": 211.925,
+    "total_energy": 15894.375,
+    "resource_cells": 2651,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 98,
+    "alive_agents": 75,
+    "avg_energy": 212.4633,
+    "total_energy": 15934.75,
+    "resource_cells": 2654,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 99,
+    "alive_agents": 75,
+    "avg_energy": 213.7217,
+    "total_energy": 16029.125,
+    "resource_cells": 2644,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 100,
+    "alive_agents": 75,
+    "avg_energy": 215.1667,
+    "total_energy": 16137.5,
+    "resource_cells": 2635,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 101,
+    "alive_agents": 75,
+    "avg_energy": 215.6117,
+    "total_energy": 16170.875,
+    "resource_cells": 2633,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 102,
+    "alive_agents": 75,
+    "avg_energy": 216.4033,
+    "total_energy": 16230.25,
+    "resource_cells": 2630,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 103,
+    "alive_agents": 75,
+    "avg_energy": 217.155,
+    "total_energy": 16286.625,
+    "resource_cells": 2625,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 104,
+    "alive_agents": 75,
+    "avg_energy": 217.8933,
+    "total_energy": 16342.0,
+    "resource_cells": 2621,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 105,
+    "alive_agents": 75,
+    "avg_energy": 218.8183,
+    "total_energy": 16411.375,
+    "resource_cells": 2615,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 106,
+    "alive_agents": 75,
+    "avg_energy": 219.5967,
+    "total_energy": 16469.75,
+    "resource_cells": 2609,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 107,
+    "alive_agents": 75,
+    "avg_energy": 220.3483,
+    "total_energy": 16526.125,
+    "resource_cells": 2609,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 108,
+    "alive_agents": 75,
+    "avg_energy": 221.3667,
+    "total_energy": 16602.5,
+    "resource_cells": 2600,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 109,
+    "alive_agents": 75,
+    "avg_energy": 222.145,
+    "total_energy": 16660.875,
+    "resource_cells": 2596,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 110,
+    "alive_agents": 75,
+    "avg_energy": 222.8833,
+    "total_energy": 16716.25,
+    "resource_cells": 2591,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 111,
+    "alive_agents": 75,
+    "avg_energy": 223.8483,
+    "total_energy": 16788.625,
+    "resource_cells": 2588,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 112,
+    "alive_agents": 75,
+    "avg_energy": 225.0133,
+    "total_energy": 16876.0,
+    "resource_cells": 2582,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 113,
+    "alive_agents": 75,
+    "avg_energy": 225.7917,
+    "total_energy": 16934.375,
+    "resource_cells": 2583,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 114,
+    "alive_agents": 75,
+    "avg_energy": 226.5967,
+    "total_energy": 16994.75,
+    "resource_cells": 2581,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 115,
+    "alive_agents": 75,
+    "avg_energy": 227.255,
+    "total_energy": 17044.125,
+    "resource_cells": 2581,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 116,
+    "alive_agents": 75,
+    "avg_energy": 228.0867,
+    "total_energy": 17106.5,
+    "resource_cells": 2579,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 117,
+    "alive_agents": 75,
+    "avg_energy": 228.9183,
+    "total_energy": 17168.875,
+    "resource_cells": 2572,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 118,
+    "alive_agents": 75,
+    "avg_energy": 229.6033,
+    "total_energy": 17220.25,
+    "resource_cells": 2571,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 119,
+    "alive_agents": 75,
+    "avg_energy": 230.915,
+    "total_energy": 17318.625,
+    "resource_cells": 2563,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 120,
+    "alive_agents": 75,
+    "avg_energy": 231.7333,
+    "total_energy": 17380.0,
+    "resource_cells": 2561,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 121,
+    "alive_agents": 75,
+    "avg_energy": 232.6583,
+    "total_energy": 17449.375,
+    "resource_cells": 2556,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 122,
+    "alive_agents": 75,
+    "avg_energy": 233.1967,
+    "total_energy": 17489.75,
+    "resource_cells": 2554,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 123,
+    "alive_agents": 75,
+    "avg_energy": 233.855,
+    "total_energy": 17539.125,
+    "resource_cells": 2556,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 124,
+    "alive_agents": 75,
+    "avg_energy": 234.7667,
+    "total_energy": 17607.5,
+    "resource_cells": 2553,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 125,
+    "alive_agents": 75,
+    "avg_energy": 235.5317,
+    "total_energy": 17664.875,
+    "resource_cells": 2557,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 126,
+    "alive_agents": 75,
+    "avg_energy": 236.4033,
+    "total_energy": 17730.25,
+    "resource_cells": 2557,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 127,
+    "alive_agents": 75,
+    "avg_energy": 237.3283,
+    "total_energy": 17799.625,
+    "resource_cells": 2554,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 128,
+    "alive_agents": 75,
+    "avg_energy": 238.2,
+    "total_energy": 17865.0,
+    "resource_cells": 2554,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 129,
+    "alive_agents": 75,
+    "avg_energy": 239.365,
+    "total_energy": 17952.375,
+    "resource_cells": 2549,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 130,
+    "alive_agents": 75,
+    "avg_energy": 240.1567,
+    "total_energy": 18011.75,
+    "resource_cells": 2548,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 131,
+    "alive_agents": 75,
+    "avg_energy": 240.695,
+    "total_energy": 18052.125,
+    "resource_cells": 2549,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 132,
+    "alive_agents": 75,
+    "avg_energy": 241.34,
+    "total_energy": 18100.5,
+    "resource_cells": 2545,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 133,
+    "alive_agents": 75,
+    "avg_energy": 242.105,
+    "total_energy": 18157.875,
+    "resource_cells": 2543,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 134,
+    "alive_agents": 75,
+    "avg_energy": 242.8167,
+    "total_energy": 18211.25,
+    "resource_cells": 2542,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 135,
+    "alive_agents": 75,
+    "avg_energy": 243.6083,
+    "total_energy": 18270.625,
+    "resource_cells": 2536,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 136,
+    "alive_agents": 75,
+    "avg_energy": 244.28,
+    "total_energy": 18321.0,
+    "resource_cells": 2533,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 137,
+    "alive_agents": 75,
+    "avg_energy": 244.8183,
+    "total_energy": 18361.375,
+    "resource_cells": 2534,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 138,
+    "alive_agents": 75,
+    "avg_energy": 245.6367,
+    "total_energy": 18422.75,
+    "resource_cells": 2532,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 139,
+    "alive_agents": 75,
+    "avg_energy": 246.6817,
+    "total_energy": 18501.125,
+    "resource_cells": 2526,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 140,
+    "alive_agents": 75,
+    "avg_energy": 247.5267,
+    "total_energy": 18564.5,
+    "resource_cells": 2524,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 141,
+    "alive_agents": 75,
+    "avg_energy": 248.6917,
+    "total_energy": 18651.875,
+    "resource_cells": 2518,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 142,
+    "alive_agents": 75,
+    "avg_energy": 248.9367,
+    "total_energy": 18670.25,
+    "resource_cells": 2521,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 143,
+    "alive_agents": 75,
+    "avg_energy": 249.7817,
+    "total_energy": 18733.625,
+    "resource_cells": 2518,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 144,
+    "alive_agents": 75,
+    "avg_energy": 250.5867,
+    "total_energy": 18794.0,
+    "resource_cells": 2512,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 145,
+    "alive_agents": 75,
+    "avg_energy": 251.3117,
+    "total_energy": 18848.375,
+    "resource_cells": 2512,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 146,
+    "alive_agents": 75,
+    "avg_energy": 251.9833,
+    "total_energy": 18898.75,
+    "resource_cells": 2505,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 147,
+    "alive_agents": 75,
+    "avg_energy": 252.0283,
+    "total_energy": 18902.125,
+    "resource_cells": 2514,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 148,
+    "alive_agents": 75,
+    "avg_energy": 252.9533,
+    "total_energy": 18971.5,
+    "resource_cells": 2511,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 149,
+    "alive_agents": 75,
+    "avg_energy": 253.7317,
+    "total_energy": 19029.875,
+    "resource_cells": 2510,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 150,
+    "alive_agents": 75,
+    "avg_energy": 253.8833,
+    "total_energy": 19041.25,
+    "resource_cells": 2515,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 151,
+    "alive_agents": 75,
+    "avg_energy": 254.9017,
+    "total_energy": 19117.625,
+    "resource_cells": 2515,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 152,
+    "alive_agents": 75,
+    "avg_energy": 255.3067,
+    "total_energy": 19148.0,
+    "resource_cells": 2518,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 153,
+    "alive_agents": 75,
+    "avg_energy": 256.1517,
+    "total_energy": 19211.375,
+    "resource_cells": 2511,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 154,
+    "alive_agents": 75,
+    "avg_energy": 256.4367,
+    "total_energy": 19232.75,
+    "resource_cells": 2519,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 155,
+    "alive_agents": 75,
+    "avg_energy": 256.9217,
+    "total_energy": 19269.125,
+    "resource_cells": 2523,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 156,
+    "alive_agents": 75,
+    "avg_energy": 257.98,
+    "total_energy": 19348.5,
+    "resource_cells": 2521,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 157,
+    "alive_agents": 75,
+    "avg_energy": 258.665,
+    "total_energy": 19399.875,
+    "resource_cells": 2521,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 158,
+    "alive_agents": 75,
+    "avg_energy": 259.5233,
+    "total_energy": 19464.25,
+    "resource_cells": 2524,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 159,
+    "alive_agents": 75,
+    "avg_energy": 260.0483,
+    "total_energy": 19503.625,
+    "resource_cells": 2524,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 160,
+    "alive_agents": 75,
+    "avg_energy": 260.88,
+    "total_energy": 19566.0,
+    "resource_cells": 2524,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 161,
+    "alive_agents": 75,
+    "avg_energy": 261.3917,
+    "total_energy": 19604.375,
+    "resource_cells": 2524,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 162,
+    "alive_agents": 75,
+    "avg_energy": 262.1033,
+    "total_energy": 19657.75,
+    "resource_cells": 2525,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 163,
+    "alive_agents": 75,
+    "avg_energy": 262.5883,
+    "total_energy": 19694.125,
+    "resource_cells": 2523,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 164,
+    "alive_agents": 75,
+    "avg_energy": 263.8067,
+    "total_energy": 19785.5,
+    "resource_cells": 2520,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 165,
+    "alive_agents": 75,
+    "avg_energy": 264.385,
+    "total_energy": 19828.875,
+    "resource_cells": 2520,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 166,
+    "alive_agents": 75,
+    "avg_energy": 265.2167,
+    "total_energy": 19891.25,
+    "resource_cells": 2516,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 167,
+    "alive_agents": 75,
+    "avg_energy": 265.7283,
+    "total_energy": 19929.625,
+    "resource_cells": 2521,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 168,
+    "alive_agents": 75,
+    "avg_energy": 266.9733,
+    "total_energy": 20023.0,
+    "resource_cells": 2515,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 169,
+    "alive_agents": 75,
+    "avg_energy": 268.045,
+    "total_energy": 20103.375,
+    "resource_cells": 2512,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 170,
+    "alive_agents": 75,
+    "avg_energy": 268.6633,
+    "total_energy": 20149.75,
+    "resource_cells": 2511,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 171,
+    "alive_agents": 75,
+    "avg_energy": 269.1083,
+    "total_energy": 20183.125,
+    "resource_cells": 2513,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 172,
+    "alive_agents": 75,
+    "avg_energy": 269.3533,
+    "total_energy": 20201.5,
+    "resource_cells": 2510,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 173,
+    "alive_agents": 75,
+    "avg_energy": 270.2117,
+    "total_energy": 20265.875,
+    "resource_cells": 2506,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 174,
+    "alive_agents": 75,
+    "avg_energy": 270.9367,
+    "total_energy": 20320.25,
+    "resource_cells": 2505,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 175,
+    "alive_agents": 75,
+    "avg_energy": 271.4217,
+    "total_energy": 20356.625,
+    "resource_cells": 2507,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 176,
+    "alive_agents": 75,
+    "avg_energy": 271.72,
+    "total_energy": 20379.0,
+    "resource_cells": 2511,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 177,
+    "alive_agents": 75,
+    "avg_energy": 271.965,
+    "total_energy": 20397.375,
+    "resource_cells": 2510,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 178,
+    "alive_agents": 75,
+    "avg_energy": 272.4367,
+    "total_energy": 20432.75,
+    "resource_cells": 2510,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 179,
+    "alive_agents": 75,
+    "avg_energy": 272.935,
+    "total_energy": 20470.125,
+    "resource_cells": 2515,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 180,
+    "alive_agents": 75,
+    "avg_energy": 273.6067,
+    "total_energy": 20520.5,
+    "resource_cells": 2512,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 181,
+    "alive_agents": 75,
+    "avg_energy": 274.1183,
+    "total_energy": 20558.875,
+    "resource_cells": 2512,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 182,
+    "alive_agents": 75,
+    "avg_energy": 274.2967,
+    "total_energy": 20572.25,
+    "resource_cells": 2518,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 183,
+    "alive_agents": 75,
+    "avg_energy": 274.875,
+    "total_energy": 20615.625,
+    "resource_cells": 2516,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 184,
+    "alive_agents": 75,
+    "avg_energy": 275.8267,
+    "total_energy": 20687.0,
+    "resource_cells": 2512,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 185,
+    "alive_agents": 75,
+    "avg_energy": 276.5783,
+    "total_energy": 20743.375,
+    "resource_cells": 2508,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 186,
+    "alive_agents": 75,
+    "avg_energy": 277.25,
+    "total_energy": 20793.75,
+    "resource_cells": 2511,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 187,
+    "alive_agents": 75,
+    "avg_energy": 278.0683,
+    "total_energy": 20855.125,
+    "resource_cells": 2510,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 188,
+    "alive_agents": 75,
+    "avg_energy": 279.1267,
+    "total_energy": 20934.5,
+    "resource_cells": 2503,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 189,
+    "alive_agents": 75,
+    "avg_energy": 279.305,
+    "total_energy": 20947.875,
+    "resource_cells": 2511,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 190,
+    "alive_agents": 75,
+    "avg_energy": 280.0833,
+    "total_energy": 21006.25,
+    "resource_cells": 2511,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 191,
+    "alive_agents": 75,
+    "avg_energy": 280.9283,
+    "total_energy": 21069.625,
+    "resource_cells": 2511,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 192,
+    "alive_agents": 75,
+    "avg_energy": 281.64,
+    "total_energy": 21123.0,
+    "resource_cells": 2508,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 193,
+    "alive_agents": 75,
+    "avg_energy": 282.445,
+    "total_energy": 21183.375,
+    "resource_cells": 2510,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 194,
+    "alive_agents": 75,
+    "avg_energy": 283.05,
+    "total_energy": 21228.75,
+    "resource_cells": 2514,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 195,
+    "alive_agents": 75,
+    "avg_energy": 283.8417,
+    "total_energy": 21288.125,
+    "resource_cells": 2511,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 196,
+    "alive_agents": 75,
+    "avg_energy": 284.42,
+    "total_energy": 21331.5,
+    "resource_cells": 2509,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 197,
+    "alive_agents": 75,
+    "avg_energy": 285.0383,
+    "total_energy": 21377.875,
+    "resource_cells": 2512,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 198,
+    "alive_agents": 75,
+    "avg_energy": 285.31,
+    "total_energy": 21398.25,
+    "resource_cells": 2515,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 199,
+    "alive_agents": 75,
+    "avg_energy": 285.8217,
+    "total_energy": 21436.625,
+    "resource_cells": 2518,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 200,
+    "alive_agents": 75,
+    "avg_energy": 286.3867,
+    "total_energy": 21479.0,
+    "resource_cells": 2517,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 201,
+    "alive_agents": 75,
+    "avg_energy": 286.845,
+    "total_energy": 21513.375,
+    "resource_cells": 2518,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 202,
+    "alive_agents": 75,
+    "avg_energy": 287.7567,
+    "total_energy": 21581.75,
+    "resource_cells": 2516,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 203,
+    "alive_agents": 75,
+    "avg_energy": 288.5217,
+    "total_energy": 21639.125,
+    "resource_cells": 2512,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 204,
+    "alive_agents": 75,
+    "avg_energy": 289.22,
+    "total_energy": 21691.5,
+    "resource_cells": 2508,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 205,
+    "alive_agents": 75,
+    "avg_energy": 289.9183,
+    "total_energy": 21743.875,
+    "resource_cells": 2508,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 206,
+    "alive_agents": 75,
+    "avg_energy": 290.5367,
+    "total_energy": 21790.25,
+    "resource_cells": 2508,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 207,
+    "alive_agents": 75,
+    "avg_energy": 291.2617,
+    "total_energy": 21844.625,
+    "resource_cells": 2511,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 208,
+    "alive_agents": 75,
+    "avg_energy": 291.8933,
+    "total_energy": 21892.0,
+    "resource_cells": 2507,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 209,
+    "alive_agents": 75,
+    "avg_energy": 292.3517,
+    "total_energy": 21926.375,
+    "resource_cells": 2511,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 210,
+    "alive_agents": 75,
+    "avg_energy": 292.7967,
+    "total_energy": 21959.75,
+    "resource_cells": 2512,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 211,
+    "alive_agents": 75,
+    "avg_energy": 293.8017,
+    "total_energy": 22035.125,
+    "resource_cells": 2511,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 212,
+    "alive_agents": 75,
+    "avg_energy": 294.0733,
+    "total_energy": 22055.5,
+    "resource_cells": 2517,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 213,
+    "alive_agents": 75,
+    "avg_energy": 294.545,
+    "total_energy": 22090.875,
+    "resource_cells": 2516,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 214,
+    "alive_agents": 75,
+    "avg_energy": 295.07,
+    "total_energy": 22130.25,
+    "resource_cells": 2518,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 215,
+    "alive_agents": 75,
+    "avg_energy": 295.8083,
+    "total_energy": 22185.625,
+    "resource_cells": 2515,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 216,
+    "alive_agents": 75,
+    "avg_energy": 296.2133,
+    "total_energy": 22216.0,
+    "resource_cells": 2521,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 217,
+    "alive_agents": 75,
+    "avg_energy": 297.0317,
+    "total_energy": 22277.375,
+    "resource_cells": 2512,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 218,
+    "alive_agents": 75,
+    "avg_energy": 297.9433,
+    "total_energy": 22345.75,
+    "resource_cells": 2507,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 219,
+    "alive_agents": 75,
+    "avg_energy": 298.7217,
+    "total_energy": 22404.125,
+    "resource_cells": 2501,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 220,
+    "alive_agents": 75,
+    "avg_energy": 299.22,
+    "total_energy": 22441.5,
+    "resource_cells": 2502,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 221,
+    "alive_agents": 75,
+    "avg_energy": 300.1983,
+    "total_energy": 22514.875,
+    "resource_cells": 2501,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 222,
+    "alive_agents": 75,
+    "avg_energy": 301.15,
+    "total_energy": 22586.25,
+    "resource_cells": 2497,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 223,
+    "alive_agents": 75,
+    "avg_energy": 302.075,
+    "total_energy": 22655.625,
+    "resource_cells": 2497,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 224,
+    "alive_agents": 75,
+    "avg_energy": 302.8933,
+    "total_energy": 22717.0,
+    "resource_cells": 2494,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 225,
+    "alive_agents": 75,
+    "avg_energy": 303.645,
+    "total_energy": 22773.375,
+    "resource_cells": 2490,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 226,
+    "alive_agents": 75,
+    "avg_energy": 304.3567,
+    "total_energy": 22826.75,
+    "resource_cells": 2488,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 227,
+    "alive_agents": 75,
+    "avg_energy": 305.1883,
+    "total_energy": 22889.125,
+    "resource_cells": 2486,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 228,
+    "alive_agents": 75,
+    "avg_energy": 305.6867,
+    "total_energy": 22926.5,
+    "resource_cells": 2489,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 229,
+    "alive_agents": 75,
+    "avg_energy": 306.065,
+    "total_energy": 22954.875,
+    "resource_cells": 2489,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 230,
+    "alive_agents": 75,
+    "avg_energy": 306.7767,
+    "total_energy": 23008.25,
+    "resource_cells": 2487,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 231,
+    "alive_agents": 75,
+    "avg_energy": 307.475,
+    "total_energy": 23060.625,
+    "resource_cells": 2485,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 232,
+    "alive_agents": 75,
+    "avg_energy": 308.2933,
+    "total_energy": 23122.0,
+    "resource_cells": 2479,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 233,
+    "alive_agents": 75,
+    "avg_energy": 308.765,
+    "total_energy": 23157.375,
+    "resource_cells": 2482,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 234,
+    "alive_agents": 75,
+    "avg_energy": 309.6367,
+    "total_energy": 23222.75,
+    "resource_cells": 2475,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 235,
+    "alive_agents": 75,
+    "avg_energy": 310.3483,
+    "total_energy": 23276.125,
+    "resource_cells": 2473,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 236,
+    "alive_agents": 75,
+    "avg_energy": 311.34,
+    "total_energy": 23350.5,
+    "resource_cells": 2472,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 237,
+    "alive_agents": 75,
+    "avg_energy": 311.8917,
+    "total_energy": 23391.875,
+    "resource_cells": 2475,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 238,
+    "alive_agents": 75,
+    "avg_energy": 312.7767,
+    "total_energy": 23458.25,
+    "resource_cells": 2473,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 239,
+    "alive_agents": 75,
+    "avg_energy": 313.235,
+    "total_energy": 23492.625,
+    "resource_cells": 2475,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 240,
+    "alive_agents": 75,
+    "avg_energy": 314.04,
+    "total_energy": 23553.0,
+    "resource_cells": 2472,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 241,
+    "alive_agents": 75,
+    "avg_energy": 314.3117,
+    "total_energy": 23573.375,
+    "resource_cells": 2478,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 242,
+    "alive_agents": 75,
+    "avg_energy": 314.93,
+    "total_energy": 23619.75,
+    "resource_cells": 2471,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 243,
+    "alive_agents": 75,
+    "avg_energy": 315.415,
+    "total_energy": 23656.125,
+    "resource_cells": 2474,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 244,
+    "alive_agents": 75,
+    "avg_energy": 316.6733,
+    "total_energy": 23750.5,
+    "resource_cells": 2470,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 245,
+    "alive_agents": 75,
+    "avg_energy": 317.1583,
+    "total_energy": 23786.875,
+    "resource_cells": 2472,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 246,
+    "alive_agents": 75,
+    "avg_energy": 318.0567,
+    "total_energy": 23854.25,
+    "resource_cells": 2467,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 247,
+    "alive_agents": 75,
+    "avg_energy": 319.2083,
+    "total_energy": 23940.625,
+    "resource_cells": 2462,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 248,
+    "alive_agents": 75,
+    "avg_energy": 319.7333,
+    "total_energy": 23980.0,
+    "resource_cells": 2464,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 249,
+    "alive_agents": 75,
+    "avg_energy": 320.5783,
+    "total_energy": 24043.375,
+    "resource_cells": 2462,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 250,
+    "alive_agents": 75,
+    "avg_energy": 321.37,
+    "total_energy": 24102.75,
+    "resource_cells": 2460,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 251,
+    "alive_agents": 75,
+    "avg_energy": 321.7483,
+    "total_energy": 24131.125,
+    "resource_cells": 2460,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 252,
+    "alive_agents": 75,
+    "avg_energy": 322.0733,
+    "total_energy": 24155.5,
+    "resource_cells": 2461,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 253,
+    "alive_agents": 75,
+    "avg_energy": 322.6383,
+    "total_energy": 24197.875,
+    "resource_cells": 2463,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 254,
+    "alive_agents": 75,
+    "avg_energy": 323.4433,
+    "total_energy": 24258.25,
+    "resource_cells": 2458,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 255,
+    "alive_agents": 75,
+    "avg_energy": 324.115,
+    "total_energy": 24308.625,
+    "resource_cells": 2459,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 256,
+    "alive_agents": 75,
+    "avg_energy": 324.5467,
+    "total_energy": 24341.0,
+    "resource_cells": 2462,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 257,
+    "alive_agents": 75,
+    "avg_energy": 324.8717,
+    "total_energy": 24365.375,
+    "resource_cells": 2462,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 258,
+    "alive_agents": 75,
+    "avg_energy": 325.3567,
+    "total_energy": 24401.75,
+    "resource_cells": 2457,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 259,
+    "alive_agents": 75,
+    "avg_energy": 325.8683,
+    "total_energy": 24440.125,
+    "resource_cells": 2459,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 260,
+    "alive_agents": 75,
+    "avg_energy": 326.5133,
+    "total_energy": 24488.5,
+    "resource_cells": 2457,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 261,
+    "alive_agents": 75,
+    "avg_energy": 327.705,
+    "total_energy": 24577.875,
+    "resource_cells": 2451,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 262,
+    "alive_agents": 75,
+    "avg_energy": 328.6833,
+    "total_energy": 24651.25,
+    "resource_cells": 2444,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 263,
+    "alive_agents": 75,
+    "avg_energy": 329.555,
+    "total_energy": 24716.625,
+    "resource_cells": 2438,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 264,
+    "alive_agents": 75,
+    "avg_energy": 330.3467,
+    "total_energy": 24776.0,
+    "resource_cells": 2437,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 265,
+    "alive_agents": 75,
+    "avg_energy": 331.3117,
+    "total_energy": 24848.375,
+    "resource_cells": 2430,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 266,
+    "alive_agents": 75,
+    "avg_energy": 332.2233,
+    "total_energy": 24916.75,
+    "resource_cells": 2423,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 267,
+    "alive_agents": 75,
+    "avg_energy": 332.9083,
+    "total_energy": 24968.125,
+    "resource_cells": 2420,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 268,
+    "alive_agents": 75,
+    "avg_energy": 333.6467,
+    "total_energy": 25023.5,
+    "resource_cells": 2416,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 269,
+    "alive_agents": 75,
+    "avg_energy": 334.305,
+    "total_energy": 25072.875,
+    "resource_cells": 2414,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 270,
+    "alive_agents": 75,
+    "avg_energy": 334.99,
+    "total_energy": 25124.25,
+    "resource_cells": 2413,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 271,
+    "alive_agents": 75,
+    "avg_energy": 335.9283,
+    "total_energy": 25194.625,
+    "resource_cells": 2411,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 272,
+    "alive_agents": 75,
+    "avg_energy": 336.8933,
+    "total_energy": 25267.0,
+    "resource_cells": 2405,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 273,
+    "alive_agents": 75,
+    "avg_energy": 337.3917,
+    "total_energy": 25304.375,
+    "resource_cells": 2408,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 274,
+    "alive_agents": 75,
+    "avg_energy": 338.0233,
+    "total_energy": 25351.75,
+    "resource_cells": 2406,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 275,
+    "alive_agents": 75,
+    "avg_energy": 338.695,
+    "total_energy": 25402.125,
+    "resource_cells": 2403,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 276,
+    "alive_agents": 75,
+    "avg_energy": 339.1267,
+    "total_energy": 25434.5,
+    "resource_cells": 2404,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 277,
+    "alive_agents": 75,
+    "avg_energy": 339.5717,
+    "total_energy": 25467.875,
+    "resource_cells": 2406,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 278,
+    "alive_agents": 75,
+    "avg_energy": 340.59,
+    "total_energy": 25544.25,
+    "resource_cells": 2406,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 279,
+    "alive_agents": 75,
+    "avg_energy": 341.2483,
+    "total_energy": 25593.625,
+    "resource_cells": 2407,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 280,
+    "alive_agents": 75,
+    "avg_energy": 342.04,
+    "total_energy": 25653.0,
+    "resource_cells": 2407,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 281,
+    "alive_agents": 75,
+    "avg_energy": 343.045,
+    "total_energy": 25728.375,
+    "resource_cells": 2399,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 282,
+    "alive_agents": 75,
+    "avg_energy": 343.3433,
+    "total_energy": 25750.75,
+    "resource_cells": 2408,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 283,
+    "alive_agents": 75,
+    "avg_energy": 344.4017,
+    "total_energy": 25830.125,
+    "resource_cells": 2401,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 284,
+    "alive_agents": 75,
+    "avg_energy": 345.5533,
+    "total_energy": 25916.5,
+    "resource_cells": 2395,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 285,
+    "alive_agents": 75,
+    "avg_energy": 346.6517,
+    "total_energy": 25998.875,
+    "resource_cells": 2387,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 286,
+    "alive_agents": 75,
+    "avg_energy": 347.19,
+    "total_energy": 26039.25,
+    "resource_cells": 2387,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 287,
+    "alive_agents": 75,
+    "avg_energy": 347.9017,
+    "total_energy": 26092.625,
+    "resource_cells": 2383,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 288,
+    "alive_agents": 75,
+    "avg_energy": 348.6267,
+    "total_energy": 26147.0,
+    "resource_cells": 2383,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 289,
+    "alive_agents": 75,
+    "avg_energy": 349.165,
+    "total_energy": 26187.375,
+    "resource_cells": 2382,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 290,
+    "alive_agents": 75,
+    "avg_energy": 349.81,
+    "total_energy": 26235.75,
+    "resource_cells": 2382,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 291,
+    "alive_agents": 75,
+    "avg_energy": 350.3883,
+    "total_energy": 26279.125,
+    "resource_cells": 2383,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 292,
+    "alive_agents": 75,
+    "avg_energy": 351.0333,
+    "total_energy": 26327.5,
+    "resource_cells": 2381,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 293,
+    "alive_agents": 75,
+    "avg_energy": 351.4783,
+    "total_energy": 26360.875,
+    "resource_cells": 2377,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 294,
+    "alive_agents": 75,
+    "avg_energy": 352.5767,
+    "total_energy": 26443.25,
+    "resource_cells": 2372,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 295,
+    "alive_agents": 75,
+    "avg_energy": 353.0617,
+    "total_energy": 26479.625,
+    "resource_cells": 2368,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 296,
+    "alive_agents": 75,
+    "avg_energy": 354.3467,
+    "total_energy": 26576.0,
+    "resource_cells": 2361,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 297,
+    "alive_agents": 75,
+    "avg_energy": 355.1117,
+    "total_energy": 26633.375,
+    "resource_cells": 2360,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 298,
+    "alive_agents": 75,
+    "avg_energy": 356.0633,
+    "total_energy": 26704.75,
+    "resource_cells": 2355,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 299,
+    "alive_agents": 75,
+    "avg_energy": 356.6683,
+    "total_energy": 26750.125,
+    "resource_cells": 2356,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 300,
+    "alive_agents": 75,
+    "avg_energy": 357.38,
+    "total_energy": 26803.5,
+    "resource_cells": 2352,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 301,
+    "alive_agents": 75,
+    "avg_energy": 357.7317,
+    "total_energy": 26829.875,
+    "resource_cells": 2353,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 302,
+    "alive_agents": 75,
+    "avg_energy": 358.11,
+    "total_energy": 26858.25,
+    "resource_cells": 2354,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 303,
+    "alive_agents": 75,
+    "avg_energy": 358.7017,
+    "total_energy": 26902.625,
+    "resource_cells": 2350,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 304,
+    "alive_agents": 75,
+    "avg_energy": 359.0533,
+    "total_energy": 26929.0,
+    "resource_cells": 2351,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 305,
+    "alive_agents": 75,
+    "avg_energy": 359.9917,
+    "total_energy": 26999.375,
+    "resource_cells": 2347,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 306,
+    "alive_agents": 75,
+    "avg_energy": 360.8767,
+    "total_energy": 27065.75,
+    "resource_cells": 2346,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 307,
+    "alive_agents": 75,
+    "avg_energy": 361.295,
+    "total_energy": 27097.125,
+    "resource_cells": 2347,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 308,
+    "alive_agents": 75,
+    "avg_energy": 361.8733,
+    "total_energy": 27140.5,
+    "resource_cells": 2344,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 309,
+    "alive_agents": 75,
+    "avg_energy": 362.625,
+    "total_energy": 27196.875,
+    "resource_cells": 2343,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 310,
+    "alive_agents": 75,
+    "avg_energy": 363.59,
+    "total_energy": 27269.25,
+    "resource_cells": 2337,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 311,
+    "alive_agents": 75,
+    "avg_energy": 364.795,
+    "total_energy": 27359.625,
+    "resource_cells": 2330,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 312,
+    "alive_agents": 75,
+    "avg_energy": 365.8,
+    "total_energy": 27435.0,
+    "resource_cells": 2331,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 313,
+    "alive_agents": 75,
+    "avg_energy": 366.7783,
+    "total_energy": 27508.375,
+    "resource_cells": 2327,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 314,
+    "alive_agents": 75,
+    "avg_energy": 367.5567,
+    "total_energy": 27566.75,
+    "resource_cells": 2321,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 315,
+    "alive_agents": 75,
+    "avg_energy": 368.495,
+    "total_energy": 27637.125,
+    "resource_cells": 2316,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 316,
+    "alive_agents": 75,
+    "avg_energy": 369.1267,
+    "total_energy": 27684.5,
+    "resource_cells": 2314,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 317,
+    "alive_agents": 75,
+    "avg_energy": 370.2783,
+    "total_energy": 27770.875,
+    "resource_cells": 2309,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 318,
+    "alive_agents": 75,
+    "avg_energy": 370.8433,
+    "total_energy": 27813.25,
+    "resource_cells": 2313,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 319,
+    "alive_agents": 75,
+    "avg_energy": 371.5283,
+    "total_energy": 27864.625,
+    "resource_cells": 2307,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 320,
+    "alive_agents": 75,
+    "avg_energy": 372.4533,
+    "total_energy": 27934.0,
+    "resource_cells": 2304,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 321,
+    "alive_agents": 75,
+    "avg_energy": 373.1117,
+    "total_energy": 27983.375,
+    "resource_cells": 2306,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 322,
+    "alive_agents": 75,
+    "avg_energy": 373.7967,
+    "total_energy": 28034.75,
+    "resource_cells": 2302,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 323,
+    "alive_agents": 75,
+    "avg_energy": 374.5083,
+    "total_energy": 28088.125,
+    "resource_cells": 2299,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 324,
+    "alive_agents": 75,
+    "avg_energy": 375.0733,
+    "total_energy": 28130.5,
+    "resource_cells": 2301,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 325,
+    "alive_agents": 75,
+    "avg_energy": 375.8917,
+    "total_energy": 28191.875,
+    "resource_cells": 2297,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 326,
+    "alive_agents": 75,
+    "avg_energy": 376.6433,
+    "total_energy": 28248.25,
+    "resource_cells": 2300,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 327,
+    "alive_agents": 75,
+    "avg_energy": 377.5283,
+    "total_energy": 28314.625,
+    "resource_cells": 2297,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 328,
+    "alive_agents": 75,
+    "avg_energy": 378.3333,
+    "total_energy": 28375.0,
+    "resource_cells": 2293,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 329,
+    "alive_agents": 75,
+    "avg_energy": 379.0317,
+    "total_energy": 28427.375,
+    "resource_cells": 2289,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 330,
+    "alive_agents": 75,
+    "avg_energy": 379.49,
+    "total_energy": 28461.75,
+    "resource_cells": 2290,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 331,
+    "alive_agents": 75,
+    "avg_energy": 380.1883,
+    "total_energy": 28514.125,
+    "resource_cells": 2292,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 332,
+    "alive_agents": 75,
+    "avg_energy": 381.02,
+    "total_energy": 28576.5,
+    "resource_cells": 2287,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 333,
+    "alive_agents": 75,
+    "avg_energy": 381.9183,
+    "total_energy": 28643.875,
+    "resource_cells": 2289,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 334,
+    "alive_agents": 75,
+    "avg_energy": 382.4967,
+    "total_energy": 28687.25,
+    "resource_cells": 2286,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 335,
+    "alive_agents": 75,
+    "avg_energy": 382.4083,
+    "total_energy": 28680.625,
+    "resource_cells": 2291,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 336,
+    "alive_agents": 75,
+    "avg_energy": 382.7867,
+    "total_energy": 28709.0,
+    "resource_cells": 2291,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 337,
+    "alive_agents": 75,
+    "avg_energy": 383.565,
+    "total_energy": 28767.375,
+    "resource_cells": 2288,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 338,
+    "alive_agents": 75,
+    "avg_energy": 384.53,
+    "total_energy": 28839.75,
+    "resource_cells": 2288,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 339,
+    "alive_agents": 75,
+    "avg_energy": 385.3483,
+    "total_energy": 28901.125,
+    "resource_cells": 2283,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 340,
+    "alive_agents": 75,
+    "avg_energy": 385.7667,
+    "total_energy": 28932.5,
+    "resource_cells": 2286,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 341,
+    "alive_agents": 75,
+    "avg_energy": 387.065,
+    "total_energy": 29029.875,
+    "resource_cells": 2278,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 342,
+    "alive_agents": 75,
+    "avg_energy": 387.7233,
+    "total_energy": 29079.25,
+    "resource_cells": 2283,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 343,
+    "alive_agents": 75,
+    "avg_energy": 388.635,
+    "total_energy": 29147.625,
+    "resource_cells": 2282,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 344,
+    "alive_agents": 75,
+    "avg_energy": 388.9067,
+    "total_energy": 29168.0,
+    "resource_cells": 2289,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 345,
+    "alive_agents": 75,
+    "avg_energy": 390.205,
+    "total_energy": 29265.375,
+    "resource_cells": 2283,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 346,
+    "alive_agents": 75,
+    "avg_energy": 390.93,
+    "total_energy": 29319.75,
+    "resource_cells": 2283,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 347,
+    "alive_agents": 75,
+    "avg_energy": 391.615,
+    "total_energy": 29371.125,
+    "resource_cells": 2284,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 348,
+    "alive_agents": 75,
+    "avg_energy": 392.1533,
+    "total_energy": 29411.5,
+    "resource_cells": 2283,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 349,
+    "alive_agents": 75,
+    "avg_energy": 392.9717,
+    "total_energy": 29472.875,
+    "resource_cells": 2279,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 350,
+    "alive_agents": 75,
+    "avg_energy": 393.7367,
+    "total_energy": 29530.25,
+    "resource_cells": 2278,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 351,
+    "alive_agents": 75,
+    "avg_energy": 394.3817,
+    "total_energy": 29578.625,
+    "resource_cells": 2278,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 352,
+    "alive_agents": 75,
+    "avg_energy": 395.24,
+    "total_energy": 29643.0,
+    "resource_cells": 2277,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 353,
+    "alive_agents": 75,
+    "avg_energy": 395.5117,
+    "total_energy": 29663.375,
+    "resource_cells": 2278,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 354,
+    "alive_agents": 75,
+    "avg_energy": 396.37,
+    "total_energy": 29727.75,
+    "resource_cells": 2272,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 355,
+    "alive_agents": 75,
+    "avg_energy": 397.2017,
+    "total_energy": 29790.125,
+    "resource_cells": 2274,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 356,
+    "alive_agents": 75,
+    "avg_energy": 398.06,
+    "total_energy": 29854.5,
+    "resource_cells": 2274,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 357,
+    "alive_agents": 75,
+    "avg_energy": 398.8917,
+    "total_energy": 29916.875,
+    "resource_cells": 2268,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 358,
+    "alive_agents": 75,
+    "avg_energy": 399.59,
+    "total_energy": 29969.25,
+    "resource_cells": 2270,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 359,
+    "alive_agents": 75,
+    "avg_energy": 400.4083,
+    "total_energy": 30030.625,
+    "resource_cells": 2264,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 360,
+    "alive_agents": 75,
+    "avg_energy": 400.8133,
+    "total_energy": 30061.0,
+    "resource_cells": 2267,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 361,
+    "alive_agents": 75,
+    "avg_energy": 401.925,
+    "total_energy": 30144.375,
+    "resource_cells": 2261,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 362,
+    "alive_agents": 75,
+    "avg_energy": 402.2367,
+    "total_energy": 30167.75,
+    "resource_cells": 2261,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 363,
+    "alive_agents": 75,
+    "avg_energy": 403.1083,
+    "total_energy": 30233.125,
+    "resource_cells": 2253,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 364,
+    "alive_agents": 75,
+    "avg_energy": 403.7667,
+    "total_energy": 30282.5,
+    "resource_cells": 2257,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 365,
+    "alive_agents": 75,
+    "avg_energy": 404.1583,
+    "total_energy": 30311.875,
+    "resource_cells": 2255,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 366,
+    "alive_agents": 75,
+    "avg_energy": 404.87,
+    "total_energy": 30365.25,
+    "resource_cells": 2253,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 367,
+    "alive_agents": 75,
+    "avg_energy": 405.8217,
+    "total_energy": 30436.625,
+    "resource_cells": 2247,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 368,
+    "alive_agents": 75,
+    "avg_energy": 406.3467,
+    "total_energy": 30476.0,
+    "resource_cells": 2246,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 369,
+    "alive_agents": 75,
+    "avg_energy": 406.9917,
+    "total_energy": 30524.375,
+    "resource_cells": 2247,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 370,
+    "alive_agents": 75,
+    "avg_energy": 407.3433,
+    "total_energy": 30550.75,
+    "resource_cells": 2250,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 371,
+    "alive_agents": 75,
+    "avg_energy": 408.0683,
+    "total_energy": 30605.125,
+    "resource_cells": 2249,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 372,
+    "alive_agents": 75,
+    "avg_energy": 408.7,
+    "total_energy": 30652.5,
+    "resource_cells": 2248,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 373,
+    "alive_agents": 75,
+    "avg_energy": 409.1983,
+    "total_energy": 30689.875,
+    "resource_cells": 2251,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 374,
+    "alive_agents": 75,
+    "avg_energy": 410.03,
+    "total_energy": 30752.25,
+    "resource_cells": 2247,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 375,
+    "alive_agents": 75,
+    "avg_energy": 410.5417,
+    "total_energy": 30790.625,
+    "resource_cells": 2249,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 376,
+    "alive_agents": 75,
+    "avg_energy": 411.2533,
+    "total_energy": 30844.0,
+    "resource_cells": 2244,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 377,
+    "alive_agents": 75,
+    "avg_energy": 411.8583,
+    "total_energy": 30889.375,
+    "resource_cells": 2243,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 378,
+    "alive_agents": 75,
+    "avg_energy": 412.7167,
+    "total_energy": 30953.75,
+    "resource_cells": 2237,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 379,
+    "alive_agents": 75,
+    "avg_energy": 413.335,
+    "total_energy": 31000.125,
+    "resource_cells": 2240,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 380,
+    "alive_agents": 75,
+    "avg_energy": 414.02,
+    "total_energy": 31051.5,
+    "resource_cells": 2239,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 381,
+    "alive_agents": 75,
+    "avg_energy": 414.5583,
+    "total_energy": 31091.875,
+    "resource_cells": 2242,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 382,
+    "alive_agents": 75,
+    "avg_energy": 415.71,
+    "total_energy": 31178.25,
+    "resource_cells": 2236,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 383,
+    "alive_agents": 75,
+    "avg_energy": 416.3417,
+    "total_energy": 31225.625,
+    "resource_cells": 2238,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 384,
+    "alive_agents": 75,
+    "avg_energy": 417.1467,
+    "total_energy": 31286.0,
+    "resource_cells": 2240,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 385,
+    "alive_agents": 75,
+    "avg_energy": 418.725,
+    "total_energy": 31404.375,
+    "resource_cells": 2231,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 386,
+    "alive_agents": 75,
+    "avg_energy": 419.5033,
+    "total_energy": 31462.75,
+    "resource_cells": 2227,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 387,
+    "alive_agents": 75,
+    "avg_energy": 420.095,
+    "total_energy": 31507.125,
+    "resource_cells": 2231,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 388,
+    "alive_agents": 75,
+    "avg_energy": 420.7533,
+    "total_energy": 31556.5,
+    "resource_cells": 2231,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 389,
+    "alive_agents": 75,
+    "avg_energy": 421.7983,
+    "total_energy": 31634.875,
+    "resource_cells": 2224,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 390,
+    "alive_agents": 75,
+    "avg_energy": 422.7367,
+    "total_energy": 31705.25,
+    "resource_cells": 2221,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 391,
+    "alive_agents": 75,
+    "avg_energy": 423.7283,
+    "total_energy": 31779.625,
+    "resource_cells": 2216,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 392,
+    "alive_agents": 75,
+    "avg_energy": 424.6533,
+    "total_energy": 31849.0,
+    "resource_cells": 2216,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 393,
+    "alive_agents": 75,
+    "avg_energy": 425.5117,
+    "total_energy": 31913.375,
+    "resource_cells": 2207,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 394,
+    "alive_agents": 75,
+    "avg_energy": 426.3433,
+    "total_energy": 31975.75,
+    "resource_cells": 2207,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 395,
+    "alive_agents": 75,
+    "avg_energy": 427.295,
+    "total_energy": 32047.125,
+    "resource_cells": 2199,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 396,
+    "alive_agents": 75,
+    "avg_energy": 427.8867,
+    "total_energy": 32091.5,
+    "resource_cells": 2201,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 397,
+    "alive_agents": 75,
+    "avg_energy": 428.1583,
+    "total_energy": 32111.875,
+    "resource_cells": 2201,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 398,
+    "alive_agents": 75,
+    "avg_energy": 428.99,
+    "total_energy": 32174.25,
+    "resource_cells": 2194,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 399,
+    "alive_agents": 75,
+    "avg_energy": 429.3283,
+    "total_energy": 32199.625,
+    "resource_cells": 2198,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 400,
+    "alive_agents": 75,
+    "avg_energy": 430.12,
+    "total_energy": 32259.0,
+    "resource_cells": 2194,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 401,
+    "alive_agents": 75,
+    "avg_energy": 431.0583,
+    "total_energy": 32329.375,
+    "resource_cells": 2190,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 402,
+    "alive_agents": 75,
+    "avg_energy": 431.9033,
+    "total_energy": 32392.75,
+    "resource_cells": 2184,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 403,
+    "alive_agents": 75,
+    "avg_energy": 432.3617,
+    "total_energy": 32427.125,
+    "resource_cells": 2187,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 404,
+    "alive_agents": 75,
+    "avg_energy": 433.3933,
+    "total_energy": 32504.5,
+    "resource_cells": 2178,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 405,
+    "alive_agents": 75,
+    "avg_energy": 433.625,
+    "total_energy": 32521.875,
+    "resource_cells": 2182,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 406,
+    "alive_agents": 75,
+    "avg_energy": 434.1367,
+    "total_energy": 32560.25,
+    "resource_cells": 2175,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 407,
+    "alive_agents": 75,
+    "avg_energy": 434.515,
+    "total_energy": 32588.625,
+    "resource_cells": 2182,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 408,
+    "alive_agents": 75,
+    "avg_energy": 435.3467,
+    "total_energy": 32651.0,
+    "resource_cells": 2176,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 409,
+    "alive_agents": 75,
+    "avg_energy": 436.3117,
+    "total_energy": 32723.375,
+    "resource_cells": 2171,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 410,
+    "alive_agents": 75,
+    "avg_energy": 436.73,
+    "total_energy": 32754.75,
+    "resource_cells": 2171,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 411,
+    "alive_agents": 75,
+    "avg_energy": 437.775,
+    "total_energy": 32833.125,
+    "resource_cells": 2163,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 412,
+    "alive_agents": 75,
+    "avg_energy": 438.2333,
+    "total_energy": 32867.5,
+    "resource_cells": 2162,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 413,
+    "alive_agents": 75,
+    "avg_energy": 438.8783,
+    "total_energy": 32915.875,
+    "resource_cells": 2161,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 414,
+    "alive_agents": 75,
+    "avg_energy": 439.5233,
+    "total_energy": 32964.25,
+    "resource_cells": 2164,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 415,
+    "alive_agents": 75,
+    "avg_energy": 440.355,
+    "total_energy": 33026.625,
+    "resource_cells": 2163,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 416,
+    "alive_agents": 75,
+    "avg_energy": 440.68,
+    "total_energy": 33051.0,
+    "resource_cells": 2164,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 417,
+    "alive_agents": 75,
+    "avg_energy": 441.5917,
+    "total_energy": 33119.375,
+    "resource_cells": 2162,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 418,
+    "alive_agents": 75,
+    "avg_energy": 442.5167,
+    "total_energy": 33188.75,
+    "resource_cells": 2157,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 419,
+    "alive_agents": 75,
+    "avg_energy": 443.4417,
+    "total_energy": 33258.125,
+    "resource_cells": 2152,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 420,
+    "alive_agents": 75,
+    "avg_energy": 444.7,
+    "total_energy": 33352.5,
+    "resource_cells": 2146,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 421,
+    "alive_agents": 75,
+    "avg_energy": 445.425,
+    "total_energy": 33406.875,
+    "resource_cells": 2142,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 422,
+    "alive_agents": 75,
+    "avg_energy": 446.3633,
+    "total_energy": 33477.25,
+    "resource_cells": 2139,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 423,
+    "alive_agents": 75,
+    "avg_energy": 447.4883,
+    "total_energy": 33561.625,
+    "resource_cells": 2131,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 424,
+    "alive_agents": 75,
+    "avg_energy": 447.9333,
+    "total_energy": 33595.0,
+    "resource_cells": 2137,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 425,
+    "alive_agents": 75,
+    "avg_energy": 448.6317,
+    "total_energy": 33647.375,
+    "resource_cells": 2135,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 426,
+    "alive_agents": 75,
+    "avg_energy": 449.65,
+    "total_energy": 33723.75,
+    "resource_cells": 2132,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 427,
+    "alive_agents": 75,
+    "avg_energy": 450.6283,
+    "total_energy": 33797.125,
+    "resource_cells": 2130,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 428,
+    "alive_agents": 75,
+    "avg_energy": 450.9933,
+    "total_energy": 33824.5,
+    "resource_cells": 2127,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 429,
+    "alive_agents": 75,
+    "avg_energy": 451.7183,
+    "total_energy": 33878.875,
+    "resource_cells": 2125,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 430,
+    "alive_agents": 75,
+    "avg_energy": 452.5633,
+    "total_energy": 33942.25,
+    "resource_cells": 2118,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 431,
+    "alive_agents": 75,
+    "avg_energy": 453.3283,
+    "total_energy": 33999.625,
+    "resource_cells": 2117,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 432,
+    "alive_agents": 75,
+    "avg_energy": 454.48,
+    "total_energy": 34086.0,
+    "resource_cells": 2109,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 433,
+    "alive_agents": 75,
+    "avg_energy": 454.8583,
+    "total_energy": 34114.375,
+    "resource_cells": 2115,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 434,
+    "alive_agents": 75,
+    "avg_energy": 455.4633,
+    "total_energy": 34159.75,
+    "resource_cells": 2111,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 435,
+    "alive_agents": 75,
+    "avg_energy": 456.6283,
+    "total_energy": 34247.125,
+    "resource_cells": 2105,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 436,
+    "alive_agents": 75,
+    "avg_energy": 457.3267,
+    "total_energy": 34299.5,
+    "resource_cells": 2106,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 437,
+    "alive_agents": 75,
+    "avg_energy": 457.985,
+    "total_energy": 34348.875,
+    "resource_cells": 2108,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 438,
+    "alive_agents": 75,
+    "avg_energy": 459.0167,
+    "total_energy": 34426.25,
+    "resource_cells": 2106,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 439,
+    "alive_agents": 75,
+    "avg_energy": 459.6617,
+    "total_energy": 34474.625,
+    "resource_cells": 2106,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 440,
+    "alive_agents": 75,
+    "avg_energy": 460.5467,
+    "total_energy": 34541.0,
+    "resource_cells": 2100,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 441,
+    "alive_agents": 75,
+    "avg_energy": 461.525,
+    "total_energy": 34614.375,
+    "resource_cells": 2096,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 442,
+    "alive_agents": 75,
+    "avg_energy": 462.0767,
+    "total_energy": 34655.75,
+    "resource_cells": 2094,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 443,
+    "alive_agents": 75,
+    "avg_energy": 462.2017,
+    "total_energy": 34665.125,
+    "resource_cells": 2101,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 444,
+    "alive_agents": 75,
+    "avg_energy": 462.86,
+    "total_energy": 34714.5,
+    "resource_cells": 2096,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 445,
+    "alive_agents": 75,
+    "avg_energy": 463.465,
+    "total_energy": 34759.875,
+    "resource_cells": 2095,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 446,
+    "alive_agents": 75,
+    "avg_energy": 464.4567,
+    "total_energy": 34834.25,
+    "resource_cells": 2090,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 447,
+    "alive_agents": 75,
+    "avg_energy": 464.8083,
+    "total_energy": 34860.625,
+    "resource_cells": 2088,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 448,
+    "alive_agents": 75,
+    "avg_energy": 465.16,
+    "total_energy": 34887.0,
+    "resource_cells": 2090,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 449,
+    "alive_agents": 75,
+    "avg_energy": 466.3783,
+    "total_energy": 34978.375,
+    "resource_cells": 2080,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 450,
+    "alive_agents": 75,
+    "avg_energy": 466.7167,
+    "total_energy": 35003.75,
+    "resource_cells": 2086,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 451,
+    "alive_agents": 75,
+    "avg_energy": 467.495,
+    "total_energy": 35062.125,
+    "resource_cells": 2086,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 452,
+    "alive_agents": 75,
+    "avg_energy": 468.3667,
+    "total_energy": 35127.5,
+    "resource_cells": 2084,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 453,
+    "alive_agents": 75,
+    "avg_energy": 468.625,
+    "total_energy": 35146.875,
+    "resource_cells": 2088,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 454,
+    "alive_agents": 75,
+    "avg_energy": 469.1367,
+    "total_energy": 35185.25,
+    "resource_cells": 2089,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 455,
+    "alive_agents": 75,
+    "avg_energy": 469.6483,
+    "total_energy": 35223.625,
+    "resource_cells": 2088,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 456,
+    "alive_agents": 75,
+    "avg_energy": 470.4933,
+    "total_energy": 35287.0,
+    "resource_cells": 2086,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 457,
+    "alive_agents": 75,
+    "avg_energy": 471.5117,
+    "total_energy": 35363.375,
+    "resource_cells": 2081,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 458,
+    "alive_agents": 75,
+    "avg_energy": 472.17,
+    "total_energy": 35412.75,
+    "resource_cells": 2085,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 459,
+    "alive_agents": 75,
+    "avg_energy": 472.695,
+    "total_energy": 35452.125,
+    "resource_cells": 2088,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 460,
+    "alive_agents": 75,
+    "avg_energy": 473.3667,
+    "total_energy": 35502.5,
+    "resource_cells": 2086,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 461,
+    "alive_agents": 75,
+    "avg_energy": 473.9317,
+    "total_energy": 35544.875,
+    "resource_cells": 2089,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 462,
+    "alive_agents": 75,
+    "avg_energy": 474.5233,
+    "total_energy": 35589.25,
+    "resource_cells": 2090,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 463,
+    "alive_agents": 75,
+    "avg_energy": 475.7417,
+    "total_energy": 35680.625,
+    "resource_cells": 2085,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 464,
+    "alive_agents": 75,
+    "avg_energy": 476.1067,
+    "total_energy": 35708.0,
+    "resource_cells": 2088,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 465,
+    "alive_agents": 75,
+    "avg_energy": 477.0717,
+    "total_energy": 35780.375,
+    "resource_cells": 2086,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 466,
+    "alive_agents": 75,
+    "avg_energy": 478.17,
+    "total_energy": 35862.75,
+    "resource_cells": 2081,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 467,
+    "alive_agents": 75,
+    "avg_energy": 478.455,
+    "total_energy": 35884.125,
+    "resource_cells": 2087,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 468,
+    "alive_agents": 75,
+    "avg_energy": 478.7933,
+    "total_energy": 35909.5,
+    "resource_cells": 2089,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 469,
+    "alive_agents": 75,
+    "avg_energy": 479.5717,
+    "total_energy": 35967.875,
+    "resource_cells": 2088,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 470,
+    "alive_agents": 75,
+    "avg_energy": 480.2433,
+    "total_energy": 36018.25,
+    "resource_cells": 2086,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 471,
+    "alive_agents": 75,
+    "avg_energy": 480.995,
+    "total_energy": 36074.625,
+    "resource_cells": 2087,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 472,
+    "alive_agents": 75,
+    "avg_energy": 481.4267,
+    "total_energy": 36107.0,
+    "resource_cells": 2089,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 473,
+    "alive_agents": 75,
+    "avg_energy": 482.2183,
+    "total_energy": 36166.375,
+    "resource_cells": 2086,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 474,
+    "alive_agents": 75,
+    "avg_energy": 482.65,
+    "total_energy": 36198.75,
+    "resource_cells": 2088,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 475,
+    "alive_agents": 75,
+    "avg_energy": 483.3217,
+    "total_energy": 36249.125,
+    "resource_cells": 2091,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 476,
+    "alive_agents": 75,
+    "avg_energy": 484.42,
+    "total_energy": 36331.5,
+    "resource_cells": 2087,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 477,
+    "alive_agents": 75,
+    "avg_energy": 484.8917,
+    "total_energy": 36366.875,
+    "resource_cells": 2087,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 478,
+    "alive_agents": 75,
+    "avg_energy": 485.7633,
+    "total_energy": 36432.25,
+    "resource_cells": 2085,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 479,
+    "alive_agents": 75,
+    "avg_energy": 486.515,
+    "total_energy": 36488.625,
+    "resource_cells": 2083,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 480,
+    "alive_agents": 75,
+    "avg_energy": 487.1867,
+    "total_energy": 36539.0,
+    "resource_cells": 2077,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 481,
+    "alive_agents": 75,
+    "avg_energy": 487.4183,
+    "total_energy": 36556.375,
+    "resource_cells": 2083,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 482,
+    "alive_agents": 75,
+    "avg_energy": 488.2233,
+    "total_energy": 36616.75,
+    "resource_cells": 2081,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 483,
+    "alive_agents": 75,
+    "avg_energy": 488.6683,
+    "total_energy": 36650.125,
+    "resource_cells": 2081,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 484,
+    "alive_agents": 75,
+    "avg_energy": 489.4467,
+    "total_energy": 36708.5,
+    "resource_cells": 2079,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 485,
+    "alive_agents": 75,
+    "avg_energy": 489.8783,
+    "total_energy": 36740.875,
+    "resource_cells": 2080,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 486,
+    "alive_agents": 75,
+    "avg_energy": 490.6567,
+    "total_energy": 36799.25,
+    "resource_cells": 2080,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 487,
+    "alive_agents": 75,
+    "avg_energy": 491.4883,
+    "total_energy": 36861.625,
+    "resource_cells": 2075,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 488,
+    "alive_agents": 75,
+    "avg_energy": 491.8267,
+    "total_energy": 36887.0,
+    "resource_cells": 2075,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 489,
+    "alive_agents": 75,
+    "avg_energy": 493.205,
+    "total_energy": 36990.375,
+    "resource_cells": 2065,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 490,
+    "alive_agents": 75,
+    "avg_energy": 494.1033,
+    "total_energy": 37057.75,
+    "resource_cells": 2063,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 491,
+    "alive_agents": 75,
+    "avg_energy": 494.7217,
+    "total_energy": 37104.125,
+    "resource_cells": 2064,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 492,
+    "alive_agents": 75,
+    "avg_energy": 494.9933,
+    "total_energy": 37124.5,
+    "resource_cells": 2065,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 493,
+    "alive_agents": 75,
+    "avg_energy": 495.745,
+    "total_energy": 37180.875,
+    "resource_cells": 2066,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 494,
+    "alive_agents": 75,
+    "avg_energy": 496.8033,
+    "total_energy": 37260.25,
+    "resource_cells": 2064,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 495,
+    "alive_agents": 75,
+    "avg_energy": 497.4617,
+    "total_energy": 37309.625,
+    "resource_cells": 2061,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 496,
+    "alive_agents": 75,
+    "avg_energy": 498.2933,
+    "total_energy": 37372.0,
+    "resource_cells": 2060,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 497,
+    "alive_agents": 75,
+    "avg_energy": 498.4317,
+    "total_energy": 37382.375,
+    "resource_cells": 2072,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 498,
+    "alive_agents": 75,
+    "avg_energy": 499.17,
+    "total_energy": 37437.75,
+    "resource_cells": 2069,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 499,
+    "alive_agents": 75,
+    "avg_energy": 499.7883,
+    "total_energy": 37484.125,
+    "resource_cells": 2075,
+    "spawned_resources": 54
+  },
+  {
+    "generation": 500,
+    "alive_agents": 75,
+    "avg_energy": 500.6067,
+    "total_energy": 37545.5,
+    "resource_cells": 2075,
+    "spawned_resources": 54
+  }
+]
